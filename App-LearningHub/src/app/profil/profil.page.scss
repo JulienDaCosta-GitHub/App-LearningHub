@@ -1,0 +1,32 @@
+ion-avatar {
+    height: 125px;
+    width: 125px;
+}
+
+.avatar {
+    margin-top: 85px;
+    display: flex;
+    justify-content: center;
+}
+
+h2 {
+    text-align: center;
+    font-size: 35px;
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    margin: 15%;
+}
+
+ion-button {
+    --border-radius: 30px;
+    margin-top: 10px;
+}
+    
+.deconnexion {
+    display: flex;
+    flex-direction: column;
+    margin: 15%;
+}

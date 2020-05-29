@@ -1,0 +1,44 @@
+ion-avatar {
+    height: 125px;
+    width: 125px;
+}
+
+.avatar {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    margin-left: 35px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 35px;
+}
+
+.save_btn {
+    --border-radius: 30px;
+    margin-top: 10px;
+}
+    
+.save_profil {
+    display: flex;
+    flex-direction: column;
+    margin: 15%;
+}
+
+.modif {
+    margin-top: 50px;
+}
+
+.title-modif-profil {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.pencil {
+    margin-top: 90px;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    right: 14px;
+}
