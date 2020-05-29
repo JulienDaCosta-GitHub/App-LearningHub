@@ -1,0 +1,102 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Accueil</ion-title>
+
+    <ion-buttons slot="primary">
+      <ion-button (click)="clickedSearch()">
+        <ion-icon slot="icon-only" name="search"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+
+
+  <ion-toolbar>
+    <ion-segment value="all">
+      <ion-segment-button value="all" (click)="toDocuments()">
+        Documents
+      </ion-segment-button>
+      <ion-segment-button value="favorites">
+        Matières
+      </ion-segment-button>
+    </ion-segment>
+  </ion-toolbar>
+
+</ion-header>
+
+<ion-content>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col size="6" (click)="toAnim()">
+        <ion-card>
+          <ion-card>
+            <ion-img src="https://i.pinimg.com/564x/0c/44/a1/0c44a1b20cb42a4baaedd763172b20df.jpg"></ion-img>
+          </ion-card>
+          <ion-card-header>
+            <ion-card-title>3D</ion-card-title>
+          </ion-card-header>
+        </ion-card>
+      </ion-col>
+      <ion-col size="6" (click)="toCrea()">
+        <ion-card>
+          <ion-card>
+            <ion-img src="https://i.pinimg.com/564x/0c/44/a1/0c44a1b20cb42a4baaedd763172b20df.jpg"></ion-img>
+          </ion-card>
+          <ion-card-header>
+            <ion-card-title>Créa. & digitale</ion-card-title>
+          </ion-card-header>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="6" (click)="toComd()">
+        <ion-card>
+          <ion-card>
+            <ion-img src="https://i.pinimg.com/564x/0c/44/a1/0c44a1b20cb42a4baaedd763172b20df.jpg"></ion-img>
+          </ion-card>
+          <ion-card-header>
+            <ion-card-title>Com. digitale</ion-card-title>
+          </ion-card-header>
+        </ion-card>
+      </ion-col>
+      <ion-col size="6" (click)="toDev()">
+        <ion-card>
+          <ion-card id="card-img">
+            <ion-img src="https://i.pinimg.com/564x/0c/44/a1/0c44a1b20cb42a4baaedd763172b20df.jpg"></ion-img>
+          </ion-card>
+          <ion-card-header>
+            <ion-card-title>Dev. web</ion-card-title>
+          </ion-card-header>
+        </ion-card>
+      </ion-col>
+      <ion-col size="6" (click)="toJv()">
+        <ion-card>
+          <ion-card>
+            <ion-img src="https://i.pinimg.com/564x/0c/44/a1/0c44a1b20cb42a4baaedd763172b20df.jpg"></ion-img>
+          </ion-card>
+          <ion-card-header>
+            <ion-card-title>Jeux vidéo</ion-card-title>
+          </ion-card-header>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col size="6">
+        <ion-card>
+          <ion-card>
+            <ion-img id="img1" src="https://i.pinimg.com/564x/0c/44/a1/0c44a1b20cb42a4baaedd763172b20df.jpg"></ion-img>
+            <ion-img id="img2" src="https://i.pinimg.com/564x/0c/44/a1/0c44a1b20cb42a4baaedd763172b20df.jpg"></ion-img>
+            <ion-img id="img3" src="https://i.pinimg.com/564x/0c/44/a1/0c44a1b20cb42a4baaedd763172b20df.jpg"></ion-img>
+            <ion-img id="img4" src="https://i.pinimg.com/564x/0c/44/a1/0c44a1b20cb42a4baaedd763172b20df.jpg"></ion-img>
+          </ion-card>
+          <ion-card-header>
+            <ion-card-title>Jeux vidéo</ion-card-title>
+          </ion-card-header>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+
+</ion-content>

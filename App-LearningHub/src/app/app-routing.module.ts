@@ -43,6 +43,58 @@ const routes: Routes = [
     path: 'modifier-nom',
     loadChildren: () => import('./modifier-nom/modifier-nom.module').then( m => m.ModifierNomPageModule)
   },
+  {
+    path: 'matieres',
+    loadChildren: () => import('./matieres/matieres.module').then( m => m.MatieresPageModule)
+  },
+  {
+    path: 'accueil',
+    loadChildren: () => import('./accueil/accueil.module').then( m => m.AccueilPageModule)
+  },
+  {
+    path: 'cours-anim',
+    loadChildren: () => import('./3D/cours-anim/cours-anim.module').then(m => m.CoursAnimPageModule)
+  },
+  {
+    path: 'projets-anim',
+    loadChildren: () => import('./3D/projets-anim/projets-anim.module').then(m => m.ProjetsAnimPageModule)
+  },
+  {
+    path: 'cours-crea',
+    loadChildren: () => import('./Crea/cours-crea/cours-crea.module').then(m => m.CoursCreaPageModule)
+  },
+  {
+    path: 'projets-crea',
+    loadChildren: () => import('./Crea/projets-crea/projets-crea.module').then(m => m.ProjetsCreaPageModule)
+  },
+  {
+    path: 'cours-comd',
+    loadChildren: () => import('./ComD/cours-comd/cours-comd.module').then(m => m.CoursComdPageModule)
+  },
+  {
+    path: 'projets-comd',
+    loadChildren: () => import('./ComD/projets-comd/projets-comd.module').then(m => m.ProjetsComdPageModule)
+  },
+  {
+    path: 'cours-dev',
+    loadChildren: () => import('./Dev/cours-dev/cours-dev.module').then(m => m.CoursDevPageModule)
+  },
+  {
+    path: 'projets-dev',
+    loadChildren: () => import('./Dev/projets-dev/projets-dev.module').then(m => m.ProjetsDevPageModule)
+  },
+  {
+    path: 'cours-jv',
+    loadChildren: () => import('./Jv/cours-jv/cours-jv.module').then(m => m.CoursJvPageModule)
+  },
+  {
+    path: 'projets-jv',
+    loadChildren: () => import('./Jv/projets-jv/projets-jv.module').then(m => m.ProjetsJvPageModule)
+  },
+  {
+    path: 'recherche',
+    loadChildren: () => import('./recherche/recherche.module').then( m => m.RecherchePageModule)
+  },
 ];
 
 @NgModule({
