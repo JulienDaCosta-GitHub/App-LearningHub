@@ -95,6 +95,31 @@ const routes: Routes = [
     path: 'recherche',
     loadChildren: () => import('./recherche/recherche.module').then( m => m.RecherchePageModule)
   },
+  {
+    path: 'ajout',
+    loadChildren: () => import('./ajout/ajout.module').then( m => m.AjoutPageModule)
+  },
+  {
+    path: 'categories',
+    loadChildren: () => import('./categories/categories.module').then( m => m.CategoriesPageModule)
+  },
+
+  {
+    path: 'validation',
+    loadChildren: () => import('./validation/validation.module').then( m => m.ValidationPageModule)
+  },
+  {
+    path: 'categorie-details',
+    loadChildren: () => import('./categorie-details/categorie-details.module').then( m => m.CategorieDetailsPageModule)
+  },
+  {
+    path: 'categorie-details/:id',
+    loadChildren: () => import('./categorie-details/categorie-details.module').then( m => m.CategorieDetailsPageModule)
+  },
+  {
+    path: 'ajout-form',
+    loadChildren: () => import('./ajout-form/ajout-form.module').then( m => m.AjoutFormPageModule)
+  },
 ];
 
 @NgModule({

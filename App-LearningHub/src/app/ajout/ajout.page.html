@@ -1,0 +1,89 @@
+<!--ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>ajout</ion-title>
+  </ion-toolbar>
+</ion-header-->
+<ion-header collapse="condense">
+  <ion-toolbar>
+    <ion-title >Partager</ion-title>
+
+
+    <ion-buttons slot="primary">
+      <ion-button (click)="clickedSearch()">
+        <ion-icon slot="icon-only" name="search"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+
+  <!--ion-toolbar>
+    <ion-buttons slot="primary">
+      <ion-button (click)="clickedSearch()">
+        <ion-icon slot="icon-only" name="search" class="mr-3"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <h1 class="ml-3">Partager</h1>
+
+  </ion-toolbar-->
+</ion-header>
+
+<ion-content>
+  <h2 class="ml-3 h2_mt">Partagez votre contenu</h2>
+  <p class="ml-3">
+    Lorem ipsum dolor init lot
+  </p>
+
+  <ion-grid class="d-flex grid_margin">
+
+    <!--ion-card class="card" style="width: 10rem; height: 10rem;">
+      <img class="card-img-top"  src="https://i.pinimg.com/236x/05/be/60/05be603e0f3623e5c9ca1c3eaedaa76c.jpg" alt="ion">
+    </ion-card-->
+
+    <ion-card style=" width: 60%; height: 37%;">
+      <img style="width: 100%; max-height: 150px;" src="https://i.pinimg.com/236x/05/be/60/05be603e0f3623e5c9ca1c3eaedaa76c.jpg" />
+      <ion-card-content>
+        <ion-card-title>
+          Projets
+        </ion-card-title>
+        <p>
+          Partagez un nouveau projet
+        </p>
+      </ion-card-content>
+      <ion-row no-padding>
+
+      </ion-row>
+    </ion-card>
+
+    <ion-card style=" width: 60%; height: 37%;">
+      <img style="width: 100%; max-height: 150px;" src="https://i.pinimg.com/236x/05/be/60/05be603e0f3623e5c9ca1c3eaedaa76c.jpg" />
+      <ion-card-content>
+        <ion-card-title>
+          Cours
+        </ion-card-title>
+        <p>
+          partagez un nouveau cours
+        </p>
+      </ion-card-content>
+      <ion-row no-padding>
+
+      </ion-row>
+    </ion-card>
+
+
+    <!--ion-card class="card" style="width: 10rem; height: 10rem;">
+      <img class="card-img-top"  src="https://picsum.photos/200/300/?blur" alt="ion">
+    </ion-card-->
+
+
+  </ion-grid>
+
+  <!--ion-grid class="d-flex justify-content-around">
+    <ion-button  size="small">Ajouter</ion-button>
+    <ion-button   size="small">Ajouter</ion-button>
+  </ion-grid-->
+
+
+
+
+</ion-content>
+
+

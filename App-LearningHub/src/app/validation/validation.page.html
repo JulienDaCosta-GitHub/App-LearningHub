@@ -1,0 +1,96 @@
+<ion-header collapse="condense">
+  <ion-toolbar>
+    <ion-title *ngIf="projets">Projets</ion-title>
+    <ion-title *ngIf="cours">Cours</ion-title>
+
+    <ion-buttons slot="primary">
+      <ion-button (click)="clickedSearch()">
+        <ion-icon slot="icon-only" name="search"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+
+  <ion-toolbar>
+    <ion-segment value="all">
+      <ion-segment-button value="all" (click)="activeProjets()">
+
+        Projets
+      </ion-segment-button>
+      <ion-segment-button value="favorites" (click)="activeCours()">
+
+        Cours
+      </ion-segment-button>
+    </ion-segment>
+  </ion-toolbar>
+
+  <!--ion-toolbar>
+    <ion-buttons slot="primary">
+      <ion-button (click)="clickedSearch()">
+        <ion-icon slot="icon-only" name="search" class="mr-3"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+
+    <h1 class="ml-3" *ngIf="projets">Projets</h1>
+    <h1 class="ml-3" *ngIf="cours">Cours</h1>
+
+    <ion-toolbar class="mt-4">
+      <ion-segment value="all">
+        <ion-segment-button value="all" (click)="activeProjets()">
+          Projets
+        </ion-segment-button>
+        <ion-segment-button value="favorites" (click)="activeCours()">
+          Cours
+        </ion-segment-button>
+      </ion-segment>
+    </ion-toolbar>
+
+  </ion-toolbar-->
+</ion-header>
+
+
+
+<ion-content>
+  <p class="ml-4 mt-4" *ngIf="projets"><b>{{validattionProjetsLength}} Projets</b></p>
+  <p class="ml-4 mt-4" *ngIf="cours"><b>{{validattionCoursLength}} Cours</b></p>
+
+  <ion-grid class="d-flex" *ngIf="projets">
+    <ion-card style=" width: 44%; height: 37%;" *ngFor="let validation of validationsProjets">
+      <img style="width: 100%;" [src]="validation.url" />
+      <ion-card-content>
+        <ion-card-title>
+          {{validation.title}}
+        </ion-card-title>
+        <p>
+          {{validation.categorie}}
+        </p>
+      </ion-card-content>
+      <ion-row no-padding>
+
+      </ion-row>
+    </ion-card>
+
+
+  </ion-grid>
+
+  <ion-grid class="d-flex" *ngIf="cours">
+    <ion-card style=" width: 44%; height: 37%;" *ngFor="let validation of validationsCours">
+      <img style="width: 100%;" [src]="validation.url" />
+      <ion-card-content>
+        <ion-card-title>
+          {{validation.title}}
+        </ion-card-title>
+        <p>
+          {{validation.categorie}}
+        </p>
+      </ion-card-content>
+      <ion-row no-padding>
+
+      </ion-row>
+    </ion-card>
+
+  </ion-grid>
+
+
+
+
+</ion-content>
