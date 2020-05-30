@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-bienvenue',
@@ -7,9 +8,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BienvenuePage implements OnInit {
 
-  constructor() { }
+  constructor(public router: Router) { }
 
   ngOnInit() {
   }
 
+  toConnect()
+  {
+    this.router.navigateByUrl('connexion').then((data) => {
+      console.log(data);
+    });
+  }
+
+  toInscription()
+  {
+    this.router.navigateByUrl('inscription').then((data) => {
+      console.log(data);
+    });
+  }
 }
