@@ -1,16 +1,17 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>ajoutForm</ion-title>
-    <ion-button fill="clear" slot="end" (click)="uploadFirebase()">Suivant</ion-button>
-    <ion-button fill="clear" slot="end" (click)="add()">Test</ion-button>
+    <ion-icon style=" color: #3a7be0; width: 28px; height: 29px;" slot="start" name="chevron-back-outline"></ion-icon>
+    <ion-button style="width: 60px;" slot="start"fill="clear">Ajouter</ion-button>
+    <ion-title>Partager</ion-title>
+    <ion-button fill="clear" slot="end" (click)="uploadFirebase()" routerLink="/validation" routerDirection="forward">Suivant</ion-button>
+
 
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-  <h1 class="ml-3">Créer une catégorie</h1>
 
-  <div class="flex">
+  <div style="margin-top: 10%;" class="flex">
     <div class="img-box">
       <img [src]="image">
     </div>
