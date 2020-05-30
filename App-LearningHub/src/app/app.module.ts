@@ -12,6 +12,7 @@ import { AngularFireModule } from '@angular/fire'; // pour se connecter à Fireb
 import { AngularFireDatabaseModule } from '@angular/fire/database'; // pour manipuler la base de données Firebase
 import { AngularFireStorageModule } from '@angular/fire/storage'; // pour accéder aux fonction de stockage et de récupération des fichiers
 import { AngularFireAuthModule } from '@angular/fire/auth';
+import { Camera } from '@ionic-native/camera/ngx';
 import { environment} from '../environments/environment';
 
 @NgModule({
@@ -24,6 +25,7 @@ import { environment} from '../environments/environment';
   providers: [
     StatusBar,
     SplashScreen,
+      Camera,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
   ],
   bootstrap: [AppComponent]

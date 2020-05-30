@@ -1,0 +1,61 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/kerenndongala/Documents/GitHub/App-LearningHub/App-LearningHub/android/capacitor-cordova-android-plugins/src/main/AndroidManifest.xml:2:1-11:12
+INJECTED from /Users/kerenndongala/Documents/GitHub/App-LearningHub/App-LearningHub/android/capacitor-cordova-android-plugins/src/main/AndroidManifest.xml:2:1-11:12
+INJECTED from /Users/kerenndongala/Documents/GitHub/App-LearningHub/App-LearningHub/android/capacitor-cordova-android-plugins/src/main/AndroidManifest.xml:2:1-11:12
+INJECTED from /Users/kerenndongala/Documents/GitHub/App-LearningHub/App-LearningHub/android/capacitor-cordova-android-plugins/src/main/AndroidManifest.xml:2:1-11:12
+INJECTED from /Users/kerenndongala/Documents/GitHub/App-LearningHub/App-LearningHub/android/capacitor-cordova-android-plugins/src/main/AndroidManifest.xml:2:1-11:12
+INJECTED from /Users/kerenndongala/Documents/GitHub/App-LearningHub/App-LearningHub/android/capacitor-cordova-android-plugins/src/main/AndroidManifest.xml:2:1-11:12
+INJECTED from /Users/kerenndongala/Documents/GitHub/App-LearningHub/App-LearningHub/android/capacitor-cordova-android-plugins/src/main/AndroidManifest.xml:2:1-11:12
+	xmlns:amazon
+		ADDED from /Users/kerenndongala/Documents/GitHub/App-LearningHub/App-LearningHub/android/capacitor-cordova-android-plugins/src/main/AndroidManifest.xml:4:1-57
+	package
+		ADDED from /Users/kerenndongala/Documents/GitHub/App-LearningHub/App-LearningHub/android/capacitor-cordova-android-plugins/src/main/AndroidManifest.xml:2:11-46
+		INJECTED from /Users/kerenndongala/Documents/GitHub/App-LearningHub/App-LearningHub/android/capacitor-cordova-android-plugins/src/main/AndroidManifest.xml
+		INJECTED from /Users/kerenndongala/Documents/GitHub/App-LearningHub/App-LearningHub/android/capacitor-cordova-android-plugins/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/kerenndongala/Documents/GitHub/App-LearningHub/App-LearningHub/android/capacitor-cordova-android-plugins/src/main/AndroidManifest.xml
+		ADDED from /Users/kerenndongala/Documents/GitHub/App-LearningHub/App-LearningHub/android/capacitor-cordova-android-plugins/src/main/AndroidManifest.xml:2:1-11:12
+		INJECTED from /Users/kerenndongala/Documents/GitHub/App-LearningHub/App-LearningHub/android/capacitor-cordova-android-plugins/src/main/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /Users/kerenndongala/Documents/GitHub/App-LearningHub/App-LearningHub/android/capacitor-cordova-android-plugins/src/main/AndroidManifest.xml
+		ADDED from /Users/kerenndongala/Documents/GitHub/App-LearningHub/App-LearningHub/android/capacitor-cordova-android-plugins/src/main/AndroidManifest.xml:2:1-11:12
+		INJECTED from /Users/kerenndongala/Documents/GitHub/App-LearningHub/App-LearningHub/android/capacitor-cordova-android-plugins/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/kerenndongala/Documents/GitHub/App-LearningHub/App-LearningHub/android/capacitor-cordova-android-plugins/src/main/AndroidManifest.xml:3:1-59
+application
+ADDED from /Users/kerenndongala/Documents/GitHub/App-LearningHub/App-LearningHub/android/capacitor-cordova-android-plugins/src/main/AndroidManifest.xml:5:1-9:15
+provider#org.apache.cordova.camera.FileProvider
+ADDED from /Users/kerenndongala/Documents/GitHub/App-LearningHub/App-LearningHub/android/capacitor-cordova-android-plugins/src/main/AndroidManifest.xml:6:1-8:12
+	android:grantUriPermissions
+		ADDED from /Users/kerenndongala/Documents/GitHub/App-LearningHub/App-LearningHub/android/capacitor-cordova-android-plugins/src/main/AndroidManifest.xml:6:138-172
+	android:authorities
+		ADDED from /Users/kerenndongala/Documents/GitHub/App-LearningHub/App-LearningHub/android/capacitor-cordova-android-plugins/src/main/AndroidManifest.xml:6:65-112
+	android:exported
+		ADDED from /Users/kerenndongala/Documents/GitHub/App-LearningHub/App-LearningHub/android/capacitor-cordova-android-plugins/src/main/AndroidManifest.xml:6:113-137
+	android:name
+		ADDED from /Users/kerenndongala/Documents/GitHub/App-LearningHub/App-LearningHub/android/capacitor-cordova-android-plugins/src/main/AndroidManifest.xml:6:11-64
+meta-data#android.support.FILE_PROVIDER_PATHS
+ADDED from /Users/kerenndongala/Documents/GitHub/App-LearningHub/App-LearningHub/android/capacitor-cordova-android-plugins/src/main/AndroidManifest.xml:7:3-112
+	android:resource
+		ADDED from /Users/kerenndongala/Documents/GitHub/App-LearningHub/App-LearningHub/android/capacitor-cordova-android-plugins/src/main/AndroidManifest.xml:7:65-110
+	android:name
+		ADDED from /Users/kerenndongala/Documents/GitHub/App-LearningHub/App-LearningHub/android/capacitor-cordova-android-plugins/src/main/AndroidManifest.xml:7:14-64
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from /Users/kerenndongala/Documents/GitHub/App-LearningHub/App-LearningHub/android/capacitor-cordova-android-plugins/src/main/AndroidManifest.xml:10:1-76
+	android:name
+		ADDED from /Users/kerenndongala/Documents/GitHub/App-LearningHub/App-LearningHub/android/capacitor-cordova-android-plugins/src/main/AndroidManifest.xml:10:18-74
+uses-sdk
+INJECTED from /Users/kerenndongala/Documents/GitHub/App-LearningHub/App-LearningHub/android/capacitor-cordova-android-plugins/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/kerenndongala/Documents/GitHub/App-LearningHub/App-LearningHub/android/capacitor-cordova-android-plugins/src/main/AndroidManifest.xml
+INJECTED from /Users/kerenndongala/Documents/GitHub/App-LearningHub/App-LearningHub/android/capacitor-cordova-android-plugins/src/main/AndroidManifest.xml
+INJECTED from /Users/kerenndongala/Documents/GitHub/App-LearningHub/App-LearningHub/android/capacitor-cordova-android-plugins/src/main/AndroidManifest.xml
+INJECTED from /Users/kerenndongala/Documents/GitHub/App-LearningHub/App-LearningHub/android/capacitor-cordova-android-plugins/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/kerenndongala/Documents/GitHub/App-LearningHub/App-LearningHub/android/capacitor-cordova-android-plugins/src/main/AndroidManifest.xml
+		ADDED from /Users/kerenndongala/Documents/GitHub/App-LearningHub/App-LearningHub/android/capacitor-cordova-android-plugins/src/main/AndroidManifest.xml
+		INJECTED from /Users/kerenndongala/Documents/GitHub/App-LearningHub/App-LearningHub/android/capacitor-cordova-android-plugins/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/kerenndongala/Documents/GitHub/App-LearningHub/App-LearningHub/android/capacitor-cordova-android-plugins/src/main/AndroidManifest.xml
+		ADDED from /Users/kerenndongala/Documents/GitHub/App-LearningHub/App-LearningHub/android/capacitor-cordova-android-plugins/src/main/AndroidManifest.xml
+		INJECTED from /Users/kerenndongala/Documents/GitHub/App-LearningHub/App-LearningHub/android/capacitor-cordova-android-plugins/src/main/AndroidManifest.xml
