@@ -18,4 +18,11 @@ export class ProjetsJvPage implements OnInit {
       console.log(data);
     });
   }
+
+  clickedSearch()
+  {
+    this.router.navigateByUrl('recherche').then((data) => {
+      console.log(data);
+    });
+  }
 }

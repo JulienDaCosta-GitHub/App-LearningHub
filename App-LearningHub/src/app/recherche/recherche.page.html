@@ -1,11 +1,17 @@
 <ion-header>
-  <ion-toolbar color="transparent">
-    <ion-title>recherche</ion-title>
+  <ion-toolbar>
+    <ion-title>Recherche</ion-title>
+
+    <ion-searchbar (ionInput)="filterJsonData($event)"></ion-searchbar>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-  <ion-toolbar>
-    <ion-searchbar></ion-searchbar>
-  </ion-toolbar>
+  <div class="ion-padding">
+    <ion-list>
+      <ion-item (click)="selectVal(item.name)" *ngFor="let item of jsonData">
+        {{item.name}}
+      </ion-item>
+    </ion-list>
+  </div>
 </ion-content>
