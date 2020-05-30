@@ -6,16 +6,16 @@
 <div class="champs-connexion">
   <div class="input-connexion">
     <p>Adresse mail</p>
-    <ion-input class="access"></ion-input>
+    <ion-input class="access" [{ngModel}]="mail"></ion-input>
   </div>
 
   <div class="input-connexion">
     <p>Mot de passe</p>
-    <ion-input class="access"></ion-input>
+    <ion-input class="access" [{ngModel}]="password"></ion-input>
   </div>
 
   <div class="connexion">
-    <ion-button class="btn-connexion">Se connecter</ion-button>
+    <ion-button class="btn-connexion" (click)="login()">Se connecter</ion-button>
   </div>
 </div>
 </ion-content>
