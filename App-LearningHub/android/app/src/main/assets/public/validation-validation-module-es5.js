@@ -209,11 +209,26 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
     /*! @angular/core */
     "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
+    /* harmony import */
+
+
+    var _angular_fire_database__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    /*! @angular/fire/database */
+    "./node_modules/@angular/fire/__ivy_ngcc__/fesm2015/angular-fire-database.js");
+    /* harmony import */
+
+
+    var _angular_fire_storage__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+    /*! @angular/fire/storage */
+    "./node_modules/@angular/fire/__ivy_ngcc__/fesm2015/angular-fire-storage.js");
 
     var ValidationPage = /*#__PURE__*/function () {
-      function ValidationPage() {
+      function ValidationPage(afDB, afSG) {
         _classCallCheck(this, ValidationPage);
 
+        this.afDB = afDB;
+        this.afSG = afSG;
+        this.images = [];
         this.validationsProjets = [{
           id: 0,
           title: 'BarbaJs',
@@ -240,6 +255,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         this.validattionCoursLength = this.validationsCours.length;
         this.projets = true;
         this.cours = false;
+        this.getImagesDatabase();
       }
 
       _createClass(ValidationPage, [{
@@ -255,12 +271,47 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           this.projets = false;
         }
       }, {
+        key: "getImagesDatabase",
+        value: function getImagesDatabase() {
+          var _this = this;
+
+          // pour récupérer les informations des images
+          this.afDB.list('Images').snapshotChanges(['child_added']).subscribe(function (images) {
+            images.forEach(function (image) {
+              _this.getImagesStorage(image);
+            });
+          });
+        }
+      }, {
+        key: "getImagesStorage",
+        value: function getImagesStorage(image) {
+          var _this2 = this;
+
+          var imgRef = image.payload.exportVal().ref;
+          this.afSG.ref(imgRef).getDownloadURL().subscribe(function (imgUrl) {
+            console.log(imgUrl);
+
+            _this2.images.push({
+              name: image.payload.exportVal().name,
+              url: imgUrl
+            });
+          });
+        }
+      }, {
         key: "ngOnInit",
         value: function ngOnInit() {}
       }]);
 
       return ValidationPage;
     }();
+
+    ValidationPage.ctorParameters = function () {
+      return [{
+        type: _angular_fire_database__WEBPACK_IMPORTED_MODULE_2__["AngularFireDatabase"]
+      }, {
+        type: _angular_fire_storage__WEBPACK_IMPORTED_MODULE_3__["AngularFireStorage"]
+      }];
+    };
 
     ValidationPage = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
       selector: 'app-validation',

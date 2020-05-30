@@ -117,10 +117,17 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ValidationPage", function() { return ValidationPage; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
+/* harmony import */ var _angular_fire_database__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/fire/database */ "./node_modules/@angular/fire/__ivy_ngcc__/fesm2015/angular-fire-database.js");
+/* harmony import */ var _angular_fire_storage__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/fire/storage */ "./node_modules/@angular/fire/__ivy_ngcc__/fesm2015/angular-fire-storage.js");
+
+
 
 
 let ValidationPage = class ValidationPage {
-    constructor() {
+    constructor(afDB, afSG) {
+        this.afDB = afDB;
+        this.afSG = afSG;
+        this.images = [];
         this.validationsProjets = [
             {
                 id: 0,
@@ -153,6 +160,7 @@ let ValidationPage = class ValidationPage {
         this.validattionCoursLength = this.validationsCours.length;
         this.projets = true;
         this.cours = false;
+        this.getImagesDatabase();
     }
     activeProjets() {
         this.projets = true;
@@ -162,9 +170,31 @@ let ValidationPage = class ValidationPage {
         this.cours = true;
         this.projets = false;
     }
+    getImagesDatabase() {
+        // pour récupérer les informations des images
+        this.afDB.list('Images').snapshotChanges(['child_added']).subscribe(images => {
+            images.forEach(image => {
+                this.getImagesStorage(image);
+            });
+        });
+    }
+    getImagesStorage(image) {
+        const imgRef = image.payload.exportVal().ref;
+        this.afSG.ref(imgRef).getDownloadURL().subscribe(imgUrl => {
+            console.log(imgUrl);
+            this.images.push({
+                name: image.payload.exportVal().name,
+                url: imgUrl
+            });
+        });
+    }
     ngOnInit() {
     }
 };
+ValidationPage.ctorParameters = () => [
+    { type: _angular_fire_database__WEBPACK_IMPORTED_MODULE_2__["AngularFireDatabase"] },
+    { type: _angular_fire_storage__WEBPACK_IMPORTED_MODULE_3__["AngularFireStorage"] }
+];
 ValidationPage = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
         selector: 'app-validation',
