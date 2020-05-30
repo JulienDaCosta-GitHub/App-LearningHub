@@ -1,0 +1,54 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-grid class="d-flex ml-3">
+      <ion-icon style="width: 22px;height: 22px;" name="close-outline"></ion-icon>
+      <ion-label class="ml-3">Créer une catégorie</ion-label>
+    </ion-grid>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <!-- Formulaire nouvelle catégorie -->
+  <ion-grid class="mt-5">
+    <h1 class="ml-3">Créer une catégorie</h1>
+    <ion-grid class="mt-5">
+      <ion-grid class=" ml-3 mt-4 d-flex flex-column">
+        <ion-label style="font-size: 20px;">Attribuez un nom à votre catégorie</ion-label>
+        <ion-item style="width: 80%;">
+          <ion-input required type="text" placeholder="Nom de la catégorie" style="font-size: 16px;" [(ngModel)]="categorie.title"></ion-input>
+        </ion-item>
+      </ion-grid>
+
+      <ion-grid class=" ml-3 mt-4 d-flex flex-column">
+        <ion-label style="font-size: 20px;">Pas d'inspiration ? Essayez un de ces noms :</ion-label>
+        <ion-grid class="d-flex mt-3">
+          <ion-chip color="tertiary">
+            <ion-label color="dark">Web</ion-label>
+          </ion-chip>
+
+          <ion-chip color="tertiary">
+            <ion-label color="dark">Tutos</ion-label>
+          </ion-chip>
+
+          <ion-chip color="tertiary">
+            <ion-label color="dark">Trends</ion-label>
+          </ion-chip>
+
+          <ion-chip color="tertiary">
+            <ion-label color="dark">Trends</ion-label>
+          </ion-chip>
+
+        </ion-grid>
+
+      </ion-grid>
+
+
+
+    </ion-grid>
+
+  </ion-grid>
+  <ion-button class="" size="large" expand="block" color="tertiary" style="margin: 12% 36%;" (click)="saveCatgorie()">Créer</ion-button>
+
+
+</ion-content>
