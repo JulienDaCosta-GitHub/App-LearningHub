@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2f33943e-7aa1-4c45-9acf-b82a6e0e60ca" name="Default Changelist" comment="">
+
       <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/App-LearningHub/src/assets/img/2d.jpeg" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/App-LearningHub/src/assets/img/3D.png" afterDir="false" />
@@ -113,6 +114,12 @@
       <change beforePath="$PROJECT_DIR$/App-LearningHub/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/App-LearningHub/src/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App-LearningHub/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/App-LearningHub/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App-LearningHub/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/App-LearningHub/src/index.html" afterDir="false" />
+    </list>
+
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -126,6 +133,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+
   <component name="IgnoredFileRootStore">
     <option name="generatedRoots">
       <set>
@@ -134,10 +142,12 @@
     </option>
   </component>
   <component name="ProjectId" id="1caXXLWHpTKt6JjC70lvw4CexMk" />
+
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="PropertiesComponent">
+
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -156,6 +166,12 @@
       <recent name="$PROJECT_DIR$/App-LearningHub/src/app/Crea" />
       <recent name="$PROJECT_DIR$/App-LearningHub/src/app/3D" />
     </key>
+
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -173,6 +189,7 @@
     <configuration />
   </component>
   <component name="TaskManager">
+
     <task active="true" id="Default" summary="Default task">
       <changelist id="2f33943e-7aa1-4c45-9acf-b82a6e0e60ca" name="Default Changelist" comment="" />
       <created>1590767717008</created>
@@ -185,7 +202,7 @@
       <workItem from="1590862544573" duration="3550000" />
       <workItem from="1590905812112" duration="4074000" />
     </task>
-    <servers />
+    <servers/>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -206,4 +223,8 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
+
+    <servers />
+  </component>
+
 </project>
