@@ -1,5 +1,8 @@
 <ion-header collapse="condense">
-  <ion-toolbar style="margin-top: 10%">
+  <ion-toolbar class="navbar" style="margin-top: 10%">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/ajout-form"></ion-back-button>
+    </ion-buttons>
     <ion-title *ngIf="projets">Projets</ion-title>
     <ion-title *ngIf="cours">Cours</ion-title>
 

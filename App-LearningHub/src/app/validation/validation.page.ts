@@ -23,9 +23,9 @@ export class ValidationPage implements OnInit {
     },
     {
       id: 1,
-      title: 'BarbaJs' ,
-      categorie: 'Web Design',
-      url: 'https://i.pinimg.com/236x/ef/8e/a3/ef8ea321f0365aafe631c52e38f1d6b8.jpg'
+      title: 'Illustrator' ,
+      categorie: 'Graphic Design',
+      url: 'https://i.pinimg.com/236x/6a/07/45/6a07451631ad1dd24cce8b73ea5fc62b.jpg'
     },
 
       {
