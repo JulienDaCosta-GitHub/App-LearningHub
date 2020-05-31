@@ -1,9 +1,11 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-icon style=" color: #3a7be0; width: 28px; height: 29px;" slot="start" name="chevron-back-outline"></ion-icon>
-    <ion-button style="width: 60px;" slot="start"fill="clear">Ajouter</ion-button>
+  <ion-toolbar class="navbar">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/ajout"></ion-back-button>
+    </ion-buttons>
     <ion-title>Partager</ion-title>
-    <ion-button fill="clear" slot="end" (click)="uploadFirebase()" routerLink="/validation" routerDirection="forward">Suivant</ion-button>
+    <!--ion-button  style="color: #4343E6;"  fill="clear" slot="end" (click)="uploadFirebase()" routerLink="/validation" routerDirection="forward">Suivant</ion-button-->
+    <ion-text slot="end" style="color: #4343E6; font-size: 17.5px;font-weight: 500;" (click)="uploadFirebase()" routerLink="/validation" routerDirection="forward">Suivant</ion-text>
 
 
   </ion-toolbar>
@@ -25,18 +27,23 @@
 
 
    <ion-grid class=" ml-3 mt-4 d-flex flex-column">
-     <ion-label style="font-size: 20px;">Attribuez un nom à votre projet</ion-label>
+     <ion-label style="font-size: 20px;">Attribuez un titre à votre projet</ion-label>
      <ion-item style="width: 80%;">
-       <ion-input required type="text" placeholder="Nom de la catégorie" style="font-size: 16px;" [(ngModel)]="titre"></ion-input>
+       <ion-input required type="text" placeholder="Titre" style="font-size: 16px;" [(ngModel)]="titre"></ion-input>
      </ion-item>
    </ion-grid>
 
    <ion-grid class=" ml-3 mt-4 d-flex flex-column">
      <ion-label style="font-size: 20px;">Ajoutez une description</ion-label>
      <ion-item style="width: 80%;">
-       <ion-input required type="text"  style="font-size: 16px;" [(ngModel)]="description"></ion-input>
+       <ion-input required type="text" placeholder="description"  style="font-size: 16px;" [(ngModel)]="description"></ion-input>
      </ion-item>
    </ion-grid>
  </ion-grid>
+
+  <ion-grid class="d-flex flex-column justify-content-center" style="margin: 1% 35%;" routerLink="/categories" router-direction="forward">
+    <ion-icon name="chevron-up-outline" style="    margin-left: 27%;width: 25%; height: 24px;"></ion-icon>
+    <ion-text>Catégories</ion-text>
+  </ion-grid>
 
 </ion-content>

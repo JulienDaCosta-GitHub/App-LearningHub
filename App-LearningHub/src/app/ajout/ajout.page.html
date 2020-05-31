@@ -4,7 +4,10 @@
   </ion-toolbar>
 </ion-header-->
 <ion-header collapse="condense">
-  <ion-toolbar>
+  <ion-toolbar class="navbar">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/projets-crea"></ion-back-button>
+    </ion-buttons>
     <ion-title >Partager</ion-title>
 
 
@@ -29,7 +32,7 @@
 <ion-content>
   <h2 class="ml-3 h2_mt">Partagez votre contenu</h2>
   <p class="ml-3">
-    Lorem ipsum dolor init lot
+    Publiez vos nouvelles réalisations
   </p>
 
   <ion-grid class="d-flex grid_margin">
@@ -38,7 +41,7 @@
       <img class="card-img-top"  src="https://i.pinimg.com/236x/05/be/60/05be603e0f3623e5c9ca1c3eaedaa76c.jpg" alt="ion">
     </ion-card-->
 
-    <ion-card style=" width: 60%; height: 37%;">
+    <ion-card style=" width: 60%; height: 37%;" routerLink="/ajout-form" router-direction="forward">
       <img style="width: 100%; max-height: 150px;" src="https://i.pinimg.com/236x/2b/e4/4c/2be44c3067a60f9b54c85c09a726ec61.jpg" />
       <ion-card-content>
         <ion-card-title>
@@ -53,7 +56,7 @@
       </ion-row>
     </ion-card>
 
-    <ion-card style=" width: 60%; height: 37%;">
+    <ion-card style=" width: 60%; height: 37%;" routerLink="/ajout-form" router-direction="forward">
       <img style="width: 100%; max-height: 150px;" src="https://i.pinimg.com/236x/05/be/60/05be603e0f3623e5c9ca1c3eaedaa76c.jpg" />
       <ion-card-content>
         <ion-card-title>
