@@ -24,4 +24,5 @@ export class CoursComdPage implements OnInit {
       console.log(data);
     });
   }
+
 }

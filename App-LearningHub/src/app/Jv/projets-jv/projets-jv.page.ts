@@ -25,4 +25,5 @@ export class ProjetsJvPage implements OnInit {
       console.log(data);
     });
   }
+
 }

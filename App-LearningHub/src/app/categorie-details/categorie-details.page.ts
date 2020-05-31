@@ -3,6 +3,7 @@ import {Categorie, CategorieService} from '../services/categorie.service';
 import {ActivatedRoute} from '@angular/router';
 import {LoadingController, NavController} from '@ionic/angular';
 
+
 @Component({
   selector: 'app-categorie-details',
   templateUrl: './categorie-details.page.html',
@@ -16,7 +17,10 @@ export class CategorieDetailsPage implements OnInit {
 
   categorieId = null ;
 
-  constructor(private categorieService: CategorieService, private route: ActivatedRoute, private loadingController: LoadingController, private nav: NavController  ) { }
+  constructor(private categorieService: CategorieService,
+              private route: ActivatedRoute,
+              private loadingController: LoadingController,
+              private nav: NavController) { }
 
   ngOnInit() {
     this.categorieId = this.route.snapshot.params['id'];

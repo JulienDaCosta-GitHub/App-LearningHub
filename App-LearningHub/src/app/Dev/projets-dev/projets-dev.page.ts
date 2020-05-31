@@ -24,4 +24,5 @@ export class ProjetsDevPage implements OnInit {
       console.log(data);
     });
   }
+
 }

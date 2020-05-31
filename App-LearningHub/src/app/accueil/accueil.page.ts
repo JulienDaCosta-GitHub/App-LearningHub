@@ -23,4 +23,5 @@ export class AccueilPage implements OnInit {
       console.log(data);
     });
   }
+
 }

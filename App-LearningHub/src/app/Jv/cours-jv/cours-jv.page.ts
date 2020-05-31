@@ -24,4 +24,5 @@ export class CoursJvPage implements OnInit {
       console.log(data);
     });
   }
+
 }
