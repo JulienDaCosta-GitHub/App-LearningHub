@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="2f33943e-7aa1-4c45-9acf-b82a6e0e60ca" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App-LearningHub/src/assets/img/2d.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App-LearningHub/src/assets/img/3D.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App-LearningHub/src/assets/img/Asset.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App-LearningHub/src/assets/img/Auto.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App-LearningHub/src/assets/img/Concept.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App-LearningHub/src/assets/img/Contenu.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App-LearningHub/src/assets/img/Dev.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App-LearningHub/src/assets/img/Eclairage.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App-LearningHub/src/assets/img/Git.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App-LearningHub/src/assets/img/Github.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App-LearningHub/src/assets/img/Jv.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App-LearningHub/src/assets/img/Maya.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App-LearningHub/src/assets/img/Modeling.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App-LearningHub/src/assets/img/Modelis.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App-LearningHub/src/assets/img/Modelisation.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App-LearningHub/src/assets/img/Moldboard.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App-LearningHub/src/assets/img/Moodboard.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App-LearningHub/src/assets/img/Skin.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App-LearningHub/src/assets/img/Storyboard.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App-LearningHub/src/assets/img/Storytelling.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App-LearningHub/src/assets/img/Template.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App-LearningHub/src/assets/img/Unity.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App-LearningHub/src/assets/img/amina.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App-LearningHub/src/assets/img/ang.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App-LearningHub/src/assets/img/ap.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App-LearningHub/src/assets/img/api.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App-LearningHub/src/assets/img/around.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App-LearningHub/src/assets/img/az.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App-LearningHub/src/assets/img/brand id.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App-LearningHub/src/assets/img/c#.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App-LearningHub/src/assets/img/cSh.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App-LearningHub/src/assets/img/charac.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App-LearningHub/src/assets/img/charte.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App-LearningHub/src/assets/img/comd.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App-LearningHub/src/assets/img/creationd.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App-LearningHub/src/assets/img/css.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App-LearningHub/src/assets/img/d2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App-LearningHub/src/assets/img/dessin.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App-LearningHub/src/assets/img/email.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App-LearningHub/src/assets/img/env.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App-LearningHub/src/assets/img/goads.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App-LearningHub/src/assets/img/id v.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App-LearningHub/src/assets/img/illu.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App-LearningHub/src/assets/img/inbound.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App-LearningHub/src/assets/img/info.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App-LearningHub/src/assets/img/js.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App-LearningHub/src/assets/img/kotlin.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App-LearningHub/src/assets/img/lettres.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App-LearningHub/src/assets/img/light.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App-LearningHub/src/assets/img/log.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App-LearningHub/src/assets/img/mamp.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App-LearningHub/src/assets/img/markt.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App-LearningHub/src/assets/img/mobile.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App-LearningHub/src/assets/img/moody.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App-LearningHub/src/assets/img/motion.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App-LearningHub/src/assets/img/neu.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App-LearningHub/src/assets/img/objet.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App-LearningHub/src/assets/img/pers.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App-LearningHub/src/assets/img/perso.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App-LearningHub/src/assets/img/person.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App-LearningHub/src/assets/img/perspec.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App-LearningHub/src/assets/img/php.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App-LearningHub/src/assets/img/princ.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App-LearningHub/src/assets/img/react.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App-LearningHub/src/assets/img/reto.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App-LearningHub/src/assets/img/rs.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App-LearningHub/src/assets/img/seo.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App-LearningHub/src/assets/img/smart.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App-LearningHub/src/assets/img/social.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App-LearningHub/src/assets/img/sprites.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App-LearningHub/src/assets/img/stats.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App-LearningHub/src/assets/img/symf.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App-LearningHub/src/assets/img/text.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App-LearningHub/src/assets/img/texture.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App-LearningHub/src/assets/img/theme.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App-LearningHub/src/assets/img/ui.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App-LearningHub/src/assets/img/uiui.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App-LearningHub/src/assets/img/univers.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App-LearningHub/src/assets/img/user.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App-LearningHub/src/assets/img/uux.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App-LearningHub/src/assets/img/ux.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App-LearningHub/src/assets/img/vue.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App-LearningHub/src/assets/img/webd.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App-LearningHub/src/assets/img/wireframes.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App-LearningHub/src/assets/img/wordpr.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App-LearningHub/src/assets/img/xu.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App-LearningHub/src/app/3D/cours-anim/cours-anim.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/App-LearningHub/src/app/3D/cours-anim/cours-anim.page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App-LearningHub/src/app/3D/cours-anim/cours-anim.page.scss" beforeDir="false" afterPath="$PROJECT_DIR$/App-LearningHub/src/app/3D/cours-anim/cours-anim.page.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App-LearningHub/src/app/3D/projets-anim/projets-anim.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/App-LearningHub/src/app/3D/projets-anim/projets-anim.page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App-LearningHub/src/app/ComD/cours-comd/cours-comd.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/App-LearningHub/src/app/ComD/cours-comd/cours-comd.page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App-LearningHub/src/app/ComD/projets-comd/projets-comd.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/App-LearningHub/src/app/ComD/projets-comd/projets-comd.page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App-LearningHub/src/app/Crea/cours-crea/cours-crea.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/App-LearningHub/src/app/Crea/cours-crea/cours-crea.page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App-LearningHub/src/app/Crea/projets-crea/projets-crea.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/App-LearningHub/src/app/Crea/projets-crea/projets-crea.page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App-LearningHub/src/app/Dev/cours-dev/cours-dev.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/App-LearningHub/src/app/Dev/cours-dev/cours-dev.page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App-LearningHub/src/app/Dev/projets-dev/projets-dev.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/App-LearningHub/src/app/Dev/projets-dev/projets-dev.page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App-LearningHub/src/app/Jv/cours-jv/cours-jv.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/App-LearningHub/src/app/Jv/cours-jv/cours-jv.page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App-LearningHub/src/app/Jv/projets-jv/projets-jv.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/App-LearningHub/src/app/Jv/projets-jv/projets-jv.page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App-LearningHub/src/app/accueil/accueil.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/App-LearningHub/src/app/accueil/accueil.page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App-LearningHub/src/app/accueil/accueil.page.scss" beforeDir="false" afterPath="$PROJECT_DIR$/App-LearningHub/src/app/accueil/accueil.page.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App-LearningHub/src/app/accueil/accueil.page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/App-LearningHub/src/app/accueil/accueil.page.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App-LearningHub/src/app/ajout/ajout.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/App-LearningHub/src/app/ajout/ajout.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App-LearningHub/src/app/ajout/ajout.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/App-LearningHub/src/app/ajout/ajout.page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App-LearningHub/src/app/ajout/ajout.page.scss" beforeDir="false" afterPath="$PROJECT_DIR$/App-LearningHub/src/app/ajout/ajout.page.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App-LearningHub/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/App-LearningHub/src/app/app.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App-LearningHub/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/App-LearningHub/src/app/app.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App-LearningHub/src/app/matieres/matieres.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/App-LearningHub/src/app/matieres/matieres.page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App-LearningHub/src/app/matieres/matieres.page.scss" beforeDir="false" afterPath="$PROJECT_DIR$/App-LearningHub/src/app/matieres/matieres.page.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App-LearningHub/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/App-LearningHub/src/index.html" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution>
+      <executable />
+    </execution>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="$PROJECT_DIR$/.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectId" id="1caXXLWHpTKt6JjC70lvw4CexMk" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="ts.external.directory.path" value="$PROJECT_DIR$/App-LearningHub/node_modules/typescript/lib" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/App-LearningHub/src/app/Jv" />
+      <recent name="$PROJECT_DIR$/App-LearningHub/src/app/Dev" />
+      <recent name="$PROJECT_DIR$/App-LearningHub/src/app/ComD" />
+      <recent name="$PROJECT_DIR$/App-LearningHub/src/app/Crea" />
+      <recent name="$PROJECT_DIR$/App-LearningHub/src/app/3D" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2f33943e-7aa1-4c45-9acf-b82a6e0e60ca" name="Default Changelist" comment="" />
+      <created>1590767717008</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1590767717008</updated>
+      <workItem from="1590767718399" duration="223000" />
+      <workItem from="1590768568851" duration="5830000" />
+      <workItem from="1590822208235" duration="13468000" />
+      <workItem from="1590862544573" duration="3550000" />
+      <workItem from="1590905812112" duration="4074000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+</project>
