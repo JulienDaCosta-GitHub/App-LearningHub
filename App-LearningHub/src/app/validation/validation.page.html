@@ -1,5 +1,5 @@
 <ion-header collapse="condense">
-  <ion-toolbar>
+  <ion-toolbar style="margin-top: 10%">
     <ion-title *ngIf="projets">Projets</ion-title>
     <ion-title *ngIf="cours">Cours</ion-title>
 
@@ -53,7 +53,7 @@
   <p class="ml-4 mt-4" *ngIf="projets"><b>{{validattionProjetsLength}} Projets</b></p>
   <p class="ml-4 mt-4" *ngIf="cours"><b>{{validattionCoursLength}} Cours</b></p>
 
-  <ion-grid class="d-flex" *ngIf="projets">
+  <!--ion-grid class="d-flex flex-wrap" *ngIf="projets">
     <ion-card style=" width: 44%; height: 37%;" *ngFor="let validation of validationsProjets">
       <img style="width: 100%;" [src]="validation.url" />
       <ion-card-content>
@@ -70,6 +70,20 @@
     </ion-card>
 
 
+  </ion-grid-->
+
+  <ion-grid *ngIf="projets">
+    <ion-row>
+      <ion-col size="6" *ngFor="let validation of validationsProjets">
+        <ion-card>
+          <ion-img [src]="validation.url"></ion-img>
+          <ion-card-header>
+            <ion-card-title>{{validation.title}}</ion-card-title>
+            <ion-card-subtitle>{{validation.categorie}}</ion-card-subtitle>
+          </ion-card-header>
+        </ion-card>
+      </ion-col>
+    </ion-row>
   </ion-grid>
 
   <ion-grid class="d-flex" *ngIf="cours">

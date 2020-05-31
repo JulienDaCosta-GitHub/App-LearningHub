@@ -1,7 +1,8 @@
 <ion-header>
   <ion-toolbar>
-    <ion-icon style=" color: #3a7be0; width: 28px; height: 29px;" slot="start" name="chevron-back-outline"></ion-icon>
-    <ion-button style="width: 97px;" slot="start"fill="clear" routerLink="/bienvenue" router-direction="back">LearningHub</ion-button>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/bienvenue"></ion-back-button>
+    </ion-buttons>
     <ion-title>Connexion</ion-title>
     <ion-button *ngIf="connected" fill="clear" slot="end" (click)="logout()">Deconnexion</ion-button>
 
@@ -35,7 +36,7 @@
       </div>
 
       <div class="connexion">
-        <ion-button class="btn-connexion" (click)="login()">connexion</ion-button>
+        <ion-button class="btn-connexion" (click)="login()" routerLink="/accueil" router-direction="foward">connexion</ion-button>
       </div>
     </div>
   </div>

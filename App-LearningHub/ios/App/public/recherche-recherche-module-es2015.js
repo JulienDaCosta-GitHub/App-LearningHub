@@ -9,7 +9,7 @@
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<ion-header>\n  <ion-toolbar color=\"transparent\">\n    <ion-title>recherche</ion-title>\n  </ion-toolbar>\n</ion-header>\n\n<ion-content>\n  <ion-toolbar>\n    <ion-searchbar></ion-searchbar>\n  </ion-toolbar>\n</ion-content>\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<ion-header>\n  <ion-toolbar>\n    <ion-title>Recherche</ion-title>\n\n    <ion-searchbar (ionInput)=\"filterJsonData($event)\"></ion-searchbar>\n  </ion-toolbar>\n</ion-header>\n\n<ion-content>\n  <div class=\"ion-padding\">\n    <ion-list>\n      <ion-item (click)=\"selectVal(item.name)\" *ngFor=\"let item of jsonData\">\n        {{item.name}}\n      </ion-item>\n    </ion-list>\n  </div>\n</ion-content>\n");
 
 /***/ }),
 
@@ -101,7 +101,7 @@ RecherchePageModule = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL3JlY2hlcmNoZS9yZWNoZXJjaGUucGFnZS5zY3NzIn0= */");
+/* harmony default export */ __webpack_exports__["default"] = ("ion-title {\n  right: 13px;\n  margin-bottom: 10px;\n}\n\nion-searchbar {\n  margin-top: 80px;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9rZXJlbm5kb25nYWxhL0RvY3VtZW50cy9HaXRIdWIvQXBwLUxlYXJuaW5nSHViL0FwcC1MZWFybmluZ0h1Yi9zcmMvYXBwL3JlY2hlcmNoZS9yZWNoZXJjaGUucGFnZS5zY3NzIiwic3JjL2FwcC9yZWNoZXJjaGUvcmVjaGVyY2hlLnBhZ2Uuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLFdBQUE7RUFDQSxtQkFBQTtBQ0NGOztBREVBO0VBQ0UsZ0JBQUE7QUNDRiIsImZpbGUiOiJzcmMvYXBwL3JlY2hlcmNoZS9yZWNoZXJjaGUucGFnZS5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiaW9uLXRpdGxle1xuICByaWdodDogMTNweDtcbiAgbWFyZ2luLWJvdHRvbTogMTBweDtcblxufVxuaW9uLXNlYXJjaGJhcntcbiAgbWFyZ2luLXRvcDogODBweDtcbn1cbiIsImlvbi10aXRsZSB7XG4gIHJpZ2h0OiAxM3B4O1xuICBtYXJnaW4tYm90dG9tOiAxMHB4O1xufVxuXG5pb24tc2VhcmNoYmFyIHtcbiAgbWFyZ2luLXRvcDogODBweDtcbn0iXX0= */");
 
 /***/ }),
 
@@ -117,13 +117,59 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "RecherchePage", function() { return RecherchePage; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/__ivy_ngcc__/fesm2015/router.js");
+
 
 
 let RecherchePage = class RecherchePage {
-    constructor() { }
+    constructor(router) {
+        this.router = router;
+        this.initializaJSon();
+    }
+    filterJsonData(ev) {
+        this.initializaJSon();
+        const val = ev.target.value;
+        if (val && val.trim() !== '') {
+            this.jsonData = this.jsonData.filter((item) => {
+                return (item.name.toLowerCase().indexOf(val.toLowerCase()) > -1);
+            });
+        }
+    }
+    selectVal(val) {
+        this.router.navigateByUrl('projets-crea').then((data) => {
+            console.log(data);
+        });
+    }
     ngOnInit() {
     }
+    initializaJSon() {
+        this.jsonData = [
+            {
+                name: '3D',
+                code: '3d'
+            },
+            {
+                name: 'Création Design',
+                code: 'CD'
+            },
+            {
+                name: 'Communication Digitale',
+                code: 'COMD'
+            },
+            {
+                name: 'Développement web',
+                code: 'DW'
+            },
+            {
+                name: 'Jeux Vidéo',
+                code: 'JV'
+            }
+        ];
+    }
 };
+RecherchePage.ctorParameters = () => [
+    { type: _angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"] }
+];
 RecherchePage = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
         selector: 'app-recherche',

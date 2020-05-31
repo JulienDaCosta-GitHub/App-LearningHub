@@ -9,7 +9,7 @@
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<ion-content [fullscreen]=\"true\">\n  <div class=\"title\">\n    <h1>Learning Hub</h1>\n  </div>\n\n<div class=\"google\">\n  <ion-button color=\"light\" class=\"btn-google\">Se connecter avec Google\n    <ion-img class=\"google-icon\" src=\"assets/icon/icon-google.png\"></ion-img>\n  </ion-button>\n  <br>\n  <p>OU</p>\n</div>\n\n<div class=\"connexion\">\n  <ion-button class=\"btn-connexion\" (click)=\"toConnect()\">Se connecter</ion-button>\n</div>\n\n<div class=\"inscription\">\n  <ion-button class=\"btn-inscription\" (click)=\"toInscription()\">S'inscrire</ion-button>\n</div>\n  \n</ion-content>");
+/* harmony default export */ __webpack_exports__["default"] = ("<ion-header>\n  <ion-toolbar>\n    <ion-title>Learning Hub</ion-title>\n  </ion-toolbar>\n</ion-header>\n\n\n\n\n<ion-content>\n\n  <ion-grid>\n    <div class=\"google\">\n      <ion-button color=\"light\" class=\"btn-google\">Se connecter avec Google\n        <ion-img class=\"google-icon\" src=\"assets/icon/icon-google.png\"></ion-img>\n      </ion-button>\n      <br>\n      <p>OU</p>\n    </div>\n\n    <div class=\"connexion\">\n      <ion-button class=\"btn-connexion\" (click)=\"toConnect()\">Se connecter</ion-button>\n    </div>\n\n    <div class=\"inscription\">\n      <ion-button class=\"btn-inscription\" (click)=\"toInscription()\">S'inscrire</ion-button>\n    </div>\n  </ion-grid>\n\n\n  \n</ion-content>\n");
 
 /***/ }),
 

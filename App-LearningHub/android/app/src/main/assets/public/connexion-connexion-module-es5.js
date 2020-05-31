@@ -21,7 +21,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<ion-content [fullscreen]=\"true\">\n  <div class=\"title-profil-connexion\">\n    <h2>Connexion</h2>\n  </div>\n\n<div class=\"champs-connexion\">\n  <div class=\"input-connexion\">\n    <p>Adresse mail</p>\n    <ion-input class=\"access\"></ion-input>\n  </div>\n\n  <div class=\"input-connexion\">\n    <p>Mot de passe</p>\n    <ion-input class=\"access\"></ion-input>\n  </div>\n\n  <div class=\"connexion\">\n    <ion-button class=\"btn-connexion\">Se connecter</ion-button>\n  </div>\n</div>\n</ion-content>\n";
+    __webpack_exports__["default"] = "<ion-header>\n  <ion-toolbar>\n    <ion-icon style=\" color: #3a7be0; width: 28px; height: 29px;\" slot=\"start\" name=\"chevron-back-outline\"></ion-icon>\n    <ion-button style=\"width: 97px;\" slot=\"start\"fill=\"clear\" routerLink=\"/bienvenue\" router-direction=\"back\">LearningHub</ion-button>\n    <ion-title>Connexion</ion-title>\n    <ion-button *ngIf=\"connected\" fill=\"clear\" slot=\"end\" (click)=\"logout()\">Deconnexion</ion-button>\n\n\n  </ion-toolbar>\n</ion-header>\n<!--ion-header collapse=\"condense\">\n  <ion-toolbar>\n    <ion-title >Connexion</ion-title>\n    <ion-button *ngIf=\"connected\" fill=\"clear\" class=\"btn-connexion\" (click)=\"logout()\">Déconnexion</ion-button>\n\n\n  </ion-toolbar>\n\n</ion-header -->\n\n\n<ion-content >\n\n\n  <div *ngIf=\"!connected\">\n    <div class=\"champs-connexion\">\n      <div class=\"input-connexion\">\n        <p>Adresse mail</p>\n        <ion-input type=\"email\" class=\"access\" [(ngModel)]=\"dataUser.email\"></ion-input>\n      </div>\n\n      <div class=\"input-connexion\">\n        <p>Mot de passe</p>\n        <ion-input type=\"password\" class=\"access\" [(ngModel)]=\"dataUser.password\"></ion-input>\n      </div>\n\n      <div class=\"connexion\">\n        <ion-button class=\"btn-connexion\" (click)=\"login()\">connexion</ion-button>\n      </div>\n    </div>\n  </div>\n\n  <div *ngIf=\"connected\">\n    <h1>Vous êtes bien connecté</h1>\n    <ion-avatar style=\"width: 25%; height: 25%; margin: 10% 35%;\">\n      <img src=\"https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y\">\n    </ion-avatar>\n    <h2>{{email}}</h2>\n  </div>\n\n\n</ion-content>\n";
     /***/
   },
 
@@ -209,19 +209,68 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
     /*! @angular/core */
     "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
+    /* harmony import */
+
+
+    var _angular_fire_auth__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    /*! @angular/fire/auth */
+    "./node_modules/@angular/fire/__ivy_ngcc__/fesm2015/angular-fire-auth.js");
 
     var ConnexionPage = /*#__PURE__*/function () {
-      function ConnexionPage() {
+      function ConnexionPage(afAuth) {
+        var _this = this;
+
         _classCallCheck(this, ConnexionPage);
+
+        this.afAuth = afAuth;
+        this.dataUser = {
+          email: '',
+          password: ''
+        };
+        this.email = '';
+        this.userId = '';
+        this.method = '';
+        this.afAuth.authState.subscribe(function (auth) {
+          if (!auth) {
+            console.log('non connecté');
+            _this.connected = false;
+          } else {
+            console.log('connecté: ' + auth.uid);
+            _this.userId = auth.uid;
+            _this.email = auth.email;
+            _this.method = auth.providerData[0].providerId;
+            _this.connected = true;
+          }
+        });
       }
 
       _createClass(ConnexionPage, [{
+        key: "login",
+        value: function login() {
+          this.afAuth.signInWithEmailAndPassword(this.dataUser.email, this.dataUser.password);
+          this.dataUser = {
+            email: '',
+            password: ''
+          };
+        }
+      }, {
+        key: "logout",
+        value: function logout() {
+          this.afAuth.signOut();
+        }
+      }, {
         key: "ngOnInit",
         value: function ngOnInit() {}
       }]);
 
       return ConnexionPage;
     }();
+
+    ConnexionPage.ctorParameters = function () {
+      return [{
+        type: _angular_fire_auth__WEBPACK_IMPORTED_MODULE_2__["AngularFireAuth"]
+      }];
+    };
 
     ConnexionPage = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
       selector: 'app-connexion',

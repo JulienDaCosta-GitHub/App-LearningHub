@@ -210,7 +210,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
     var routes = [{
       path: '',
-      redirectTo: 'ajout-form',
+      redirectTo: 'validation',
       pathMatch: 'full'
     }, {
       path: 'bienvenue',
@@ -755,7 +755,13 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
     var _environments_environment__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(
     /*! ../environments/environment */
-    "./src/environments/environment.ts"); // pour se connecter à Firebase
+    "./src/environments/environment.ts");
+    /* harmony import */
+
+
+    var _angular_fire_auth__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(
+    /*! @angular/fire/auth */
+    "./node_modules/@angular/fire/__ivy_ngcc__/fesm2015/angular-fire-auth.js"); // pour se connecter à Firebase
     // pour manipuler la base de données Firebase
     // pour accéder aux fonction de stockage et de récupération des fichiers
 
@@ -767,7 +773,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     AppModule = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"])({
       declarations: [_app_component__WEBPACK_IMPORTED_MODULE_7__["AppComponent"]],
       entryComponents: [],
-      imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_2__["BrowserModule"], _ionic_angular__WEBPACK_IMPORTED_MODULE_4__["IonicModule"].forRoot(), _app_routing_module__WEBPACK_IMPORTED_MODULE_8__["AppRoutingModule"], _angular_fire__WEBPACK_IMPORTED_MODULE_9__["AngularFireModule"].initializeApp(_environments_environment__WEBPACK_IMPORTED_MODULE_13__["environment"].firebase), _angular_fire_database__WEBPACK_IMPORTED_MODULE_10__["AngularFireDatabaseModule"], _angular_fire_storage__WEBPACK_IMPORTED_MODULE_11__["AngularFireStorageModule"]],
+      imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_2__["BrowserModule"], _ionic_angular__WEBPACK_IMPORTED_MODULE_4__["IonicModule"].forRoot(), _app_routing_module__WEBPACK_IMPORTED_MODULE_8__["AppRoutingModule"], _angular_fire__WEBPACK_IMPORTED_MODULE_9__["AngularFireModule"].initializeApp(_environments_environment__WEBPACK_IMPORTED_MODULE_13__["environment"].firebase), _angular_fire_database__WEBPACK_IMPORTED_MODULE_10__["AngularFireDatabaseModule"], _angular_fire_storage__WEBPACK_IMPORTED_MODULE_11__["AngularFireStorageModule"], _angular_fire_auth__WEBPACK_IMPORTED_MODULE_14__["AngularFireAuthModule"]],
       providers: [_ionic_native_status_bar_ngx__WEBPACK_IMPORTED_MODULE_6__["StatusBar"], _ionic_native_splash_screen_ngx__WEBPACK_IMPORTED_MODULE_5__["SplashScreen"], _ionic_native_camera_ngx__WEBPACK_IMPORTED_MODULE_12__["Camera"], {
         provide: _angular_router__WEBPACK_IMPORTED_MODULE_3__["RouteReuseStrategy"],
         useClass: _ionic_angular__WEBPACK_IMPORTED_MODULE_4__["IonicRouteStrategy"]

@@ -21,12 +21,23 @@ export class ValidationPage implements OnInit {
       url: 'https://i.pinimg.com/236x/ef/8e/a3/ef8ea321f0365aafe631c52e38f1d6b8.jpg'
     },
     {
-      id: 0,
+      id: 1,
       title: 'BarbaJs' ,
       categorie: 'Web Design',
       url: 'https://i.pinimg.com/236x/ef/8e/a3/ef8ea321f0365aafe631c52e38f1d6b8.jpg'
-    }
+    },
+
+      {
+          id: 2,
+          title: 'test' ,
+          categorie: '',
+          url: 'https://i.pinimg.com/236x/ef/8e/a3/ef8ea321f0365aafe631c52e38f1d6b8.jpg'
+      }
   ] ;
+
+
+
+
   validattionProjetsLength = this.validationsProjets.length ;
 
 

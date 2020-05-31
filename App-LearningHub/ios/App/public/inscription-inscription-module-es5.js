@@ -21,7 +21,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<ion-content [fullscreen]=\"true\">\n  <div class=\"title-profil-inscription\">\n    <h2>Inscription</h2>\n  </div>\n\n  <div class=\"champs-inscription\">\n    <div class=\"input-inscription\">\n      <p>Nom</p>\n      <ion-input class=\"access\"></ion-input>\n    </div>\n  \n    <div class=\"input-inscription\">\n      <p>Prénom</p>\n      <ion-input class=\"access\"></ion-input>\n    </div>\n  \n    <div class=\"input-inscription\">\n      <p>Mail</p>\n      <ion-input class=\"access\"></ion-input>\n    </div>\n  \n    <div class=\"input-inscription\">\n      <p>Mot de passe</p>\n      <ion-input class=\"access\"></ion-input>\n    </div>\n  \n    <div class=\"input-inscription\">\n      <p>Confirmer le mot de passe</p>\n      <ion-input class=\"access\"></ion-input>\n    </div>\n  \n    <div class=\"inscription\">\n      <ion-button class=\"btn-inscription\">S'inscrire</ion-button>\n    </div>\n  </div>\n<ion-content>\n";
+    __webpack_exports__["default"] = "<ion-header>\n  <ion-toolbar>\n    <ion-icon style=\" color: #3a7be0; width: 28px; height: 29px;\" slot=\"start\" name=\"chevron-back-outline\"></ion-icon>\n    <ion-button style=\"width: 97px;\" slot=\"start\"fill=\"clear\" routerLink=\"/bienvenue\" router-direction=\"back\">LearningHub</ion-button>\n    <ion-title>Connexion</ion-title>\n    <ion-button  fill=\"clear\" slot=\"end\" (click)=\"logout()\">Deconnexion</ion-button>\n\n\n  </ion-toolbar>\n</ion-header>\n\n<ion-content>\n  <div class=\"title-profil-inscription\">\n    <h2>Inscription</h2>\n  </div>\n\n\n\n\n\n  <div class=\"champs-inscription\">\n    <div class=\"input-inscription\">\n      <p>Nom</p>\n      <ion-input class=\"access\"></ion-input>\n    </div>\n  \n    <div class=\"input-inscription\">\n      <p>Prénom</p>\n      <ion-input class=\"access\"></ion-input>\n    </div>\n  \n    <div class=\"input-inscription\">\n      <p>Mail</p>\n      <ion-input type=\"email\" class=\"access\" [(ngModel)]=\"dataUser.email\"></ion-input>\n    </div>\n  \n    <div class=\"input-inscription\">\n      <p>Mot de passe</p>\n      <ion-input type=\"password\" class=\"access\" [(ngModel)]=\"dataUser.password\"></ion-input>\n    </div>\n  \n    <div class=\"input-inscription\">\n      <p>Confirmer le mot de passe</p>\n      <ion-input class=\"access\"></ion-input>\n    </div>\n  \n    <div class=\"inscription\">\n      <ion-button class=\"btn-inscription\" (click)=\"signUp()\" routerLink=\"/connexion\" router-direction=\"foward\">S'inscrire</ion-button>\n    </div>\n  </div>\n\n<ion-content>\n";
     /***/
   },
 
@@ -209,19 +209,57 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
     /*! @angular/core */
     "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
+    /* harmony import */
+
+
+    var _angular_fire_auth__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    /*! @angular/fire/auth */
+    "./node_modules/@angular/fire/__ivy_ngcc__/fesm2015/angular-fire-auth.js");
 
     var InscriptionPage = /*#__PURE__*/function () {
-      function InscriptionPage() {
+      function InscriptionPage(afAuth) {
+        var _this = this;
+
         _classCallCheck(this, InscriptionPage);
+
+        this.afAuth = afAuth;
+        this.dataUser = {
+          email: '',
+          password: ''
+        };
+        this.afAuth.authState.subscribe(function (auth) {
+          if (!auth) {
+            console.log('non connecté');
+            _this.connected = false;
+          } else {
+            console.log('connecté: ' + auth.uid);
+            _this.connected = true;
+          }
+        });
       }
 
       _createClass(InscriptionPage, [{
+        key: "signUp",
+        value: function signUp() {
+          this.afAuth.createUserWithEmailAndPassword(this.dataUser.email, this.dataUser.password);
+          this.dataUser = {
+            email: '',
+            password: ''
+          };
+        }
+      }, {
         key: "ngOnInit",
         value: function ngOnInit() {}
       }]);
 
       return InscriptionPage;
     }();
+
+    InscriptionPage.ctorParameters = function () {
+      return [{
+        type: _angular_fire_auth__WEBPACK_IMPORTED_MODULE_2__["AngularFireAuth"]
+      }];
+    };
 
     InscriptionPage = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
       selector: 'app-inscription',
