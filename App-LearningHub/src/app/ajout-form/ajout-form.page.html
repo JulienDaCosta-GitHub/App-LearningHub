@@ -1,39 +1,30 @@
 <ion-header>
   <ion-toolbar>
     <ion-title>ajoutForm</ion-title>
-    <ion-button fill="clear" slot="end" (click)="uploadFirebase()">Suivant</ion-button>
-    <ion-button fill="clear" slot="end" (click)="add()">Test</ion-button>
-
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
   <h1 class="ml-3">Créer une catégorie</h1>
 
-  <div class="flex">
-    <div class="img-box">
-      <img [src]="image">
-    </div>
-  </div>
-
  <ion-grid>
    <ion-grid>
-     <ion-button (click)="addPhoto('library')"><ion-icon name="cloud-upload-outline"></ion-icon></ion-button>
-     <ion-button (click)="addPhoto('camera')"><ion-icon name="camera-outline"></ion-icon></ion-button>
+     <ion-button><ion-icon name="cloud-upload-outline"></ion-icon></ion-button>
+     <ion-button><ion-icon name="camera-outline"></ion-icon></ion-button>
    </ion-grid>
 
 
    <ion-grid class=" ml-3 mt-4 d-flex flex-column">
-     <ion-label style="font-size: 20px;">Attribuez un nom à votre projet</ion-label>
+     <ion-label style="font-size: 20px;">Attribuez un nom à votre catégorie</ion-label>
      <ion-item style="width: 80%;">
-       <ion-input required type="text" placeholder="Nom de la catégorie" style="font-size: 16px;" [(ngModel)]="titre"></ion-input>
+       <ion-input required type="text" placeholder="Nom de la catégorie" style="font-size: 16px;" ></ion-input>
      </ion-item>
    </ion-grid>
 
    <ion-grid class=" ml-3 mt-4 d-flex flex-column">
-     <ion-label style="font-size: 20px;">Ajoutez une description</ion-label>
+     <ion-label style="font-size: 20px;">Attribuez un nom à votre catégorie</ion-label>
      <ion-item style="width: 80%;">
-       <ion-input required type="text"  style="font-size: 16px;" [(ngModel)]="description"></ion-input>
+       <ion-input required type="text" placeholder="Nom de la catégorie" style="font-size: 16px;" ></ion-input>
      </ion-item>
    </ion-grid>
  </ion-grid>

@@ -1,7 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { ValidationProjetsModel, ValidationCoursModel } from './validation.model' ;
-import {AngularFireDatabase} from '@angular/fire/database';
-import {AngularFireStorage} from '@angular/fire/storage';
 
 
 @Component({
@@ -10,7 +8,6 @@ import {AngularFireStorage} from '@angular/fire/storage';
   styleUrls: ['./validation.page.scss'],
 })
 export class ValidationPage implements OnInit {
-    images = [];
 
 
   validationsProjets: ValidationProjetsModel[] = [
@@ -59,30 +56,8 @@ export class ValidationPage implements OnInit {
   }
 
 
-  constructor(public afDB: AngularFireDatabase,
-              public afSG: AngularFireStorage) {
-    this.getImagesDatabase();
-  }
+  constructor() {}
 
-  getImagesDatabase() {
-    // pour récupérer les informations des images
-      this.afDB.list('Images').snapshotChanges(['child_added']).subscribe(images => {
-          images.forEach(image => {
-              this.getImagesStorage(image);
-          });
-      });
-  }
-
-    getImagesStorage(image: any) {
-        const imgRef = image.payload.exportVal().ref;
-        this.afSG.ref(imgRef).getDownloadURL().subscribe(imgUrl => {
-            console.log(imgUrl);
-            this.images.push({
-                name: image.payload.exportVal().name,
-                url: imgUrl
-            });
-        });
-    }
 
 
 
