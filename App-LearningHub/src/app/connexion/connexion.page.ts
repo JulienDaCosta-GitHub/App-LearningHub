@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { AngularFireAuth } from '@angular/fire/auth';
 
 @Component({
   selector: 'app-connexion',
@@ -8,23 +7,9 @@ import { AngularFireAuth } from '@angular/fire/auth';
 })
 export class ConnexionPage implements OnInit {
 
-  mail: string = ""
-  password: string = ""
-
-  constructor(public afAuth: AngularFireAuth) { }
+  constructor() { }
 
   ngOnInit() {
   }
 
-  async login() {
-    const { mail, password } = this
-    try {
-      const res = await this.afAuth.signInWithEmailAndPassword(mail, password)
-    } catch(err) {
-      console.dir(err)
-      if(err.code === "auth/user-not-found") {
-        console.log("User not found")
-      }
-    }
-  } 
 }
