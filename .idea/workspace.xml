@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="5fb5bfbe-a6e5-4d7c-aafc-ac4480a7d8be" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/App-LearningHub/src/app/3D/cours-anim/cours-anim.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/App-LearningHub/src/app/3D/cours-anim/cours-anim.page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App-LearningHub/src/app/3D/cours-anim/cours-anim.page.scss" beforeDir="false" afterPath="$PROJECT_DIR$/App-LearningHub/src/app/3D/cours-anim/cours-anim.page.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App-LearningHub/src/app/3D/cours-anim/cours-anim.page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/App-LearningHub/src/app/3D/cours-anim/cours-anim.page.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App-LearningHub/src/app/3D/projets-anim/projets-anim.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/App-LearningHub/src/app/3D/projets-anim/projets-anim.page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App-LearningHub/src/app/3D/projets-anim/projets-anim.page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/App-LearningHub/src/app/3D/projets-anim/projets-anim.page.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App-LearningHub/src/app/accueil/accueil.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/App-LearningHub/src/app/accueil/accueil.page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App-LearningHub/src/app/accueil/accueil.page.scss" beforeDir="false" afterPath="$PROJECT_DIR$/App-LearningHub/src/app/accueil/accueil.page.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App-LearningHub/src/app/accueil/accueil.page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/App-LearningHub/src/app/accueil/accueil.page.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App-LearningHub/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/App-LearningHub/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App-LearningHub/src/app/matieres/matieres.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/App-LearningHub/src/app/matieres/matieres.page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App-LearningHub/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/App-LearningHub/src/index.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution>
+      <executable />
+    </execution>
+  </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <servers />
+  </component>
+</project>
