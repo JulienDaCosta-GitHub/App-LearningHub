@@ -2,17 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5fb5bfbe-a6e5-4d7c-aafc-ac4480a7d8be" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/App-LearningHub/src/app/3D/cours-anim/cours-anim.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/App-LearningHub/src/app/3D/cours-anim/cours-anim.page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App-LearningHub/src/app/3D/cours-anim/cours-anim.page.scss" beforeDir="false" afterPath="$PROJECT_DIR$/App-LearningHub/src/app/3D/cours-anim/cours-anim.page.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App-LearningHub/src/app/3D/cours-anim/cours-anim.page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/App-LearningHub/src/app/3D/cours-anim/cours-anim.page.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App-LearningHub/src/app/3D/projets-anim/projets-anim.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/App-LearningHub/src/app/3D/projets-anim/projets-anim.page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App-LearningHub/src/app/3D/projets-anim/projets-anim.page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/App-LearningHub/src/app/3D/projets-anim/projets-anim.page.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App-LearningHub/src/app/accueil/accueil.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/App-LearningHub/src/app/accueil/accueil.page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App-LearningHub/src/app/accueil/accueil.page.scss" beforeDir="false" afterPath="$PROJECT_DIR$/App-LearningHub/src/app/accueil/accueil.page.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App-LearningHub/src/app/accueil/accueil.page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/App-LearningHub/src/app/accueil/accueil.page.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App-LearningHub/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/App-LearningHub/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App-LearningHub/src/app/matieres/matieres.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/App-LearningHub/src/app/matieres/matieres.page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App-LearningHub/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/App-LearningHub/src/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App-LearningHub/src/app/ComD/cours-comd/cours-comd.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/App-LearningHub/src/app/ComD/cours-comd/cours-comd.page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App-LearningHub/src/app/ComD/projets-comd/projets-comd.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/App-LearningHub/src/app/ComD/projets-comd/projets-comd.page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App-LearningHub/src/app/ComD/projets-comd/projets-comd.page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/App-LearningHub/src/app/ComD/projets-comd/projets-comd.page.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App-LearningHub/src/app/Crea/cours-crea/cours-crea.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/App-LearningHub/src/app/Crea/cours-crea/cours-crea.page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App-LearningHub/src/app/Crea/cours-crea/cours-crea.page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/App-LearningHub/src/app/Crea/cours-crea/cours-crea.page.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App-LearningHub/src/app/Crea/projets-crea/projets-crea.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/App-LearningHub/src/app/Crea/projets-crea/projets-crea.page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App-LearningHub/src/app/Crea/projets-crea/projets-crea.page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/App-LearningHub/src/app/Crea/projets-crea/projets-crea.page.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
