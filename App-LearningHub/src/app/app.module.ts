@@ -13,13 +13,14 @@ import { AngularFireDatabaseModule } from '@angular/fire/database'; // pour mani
 import { AngularFireStorageModule } from '@angular/fire/storage'; // pour accéder aux fonction de stockage et de récupération des fichiers
 import { Camera } from '@ionic-native/camera/ngx';
 import { environment} from '../environments/environment';
+import {AngularFireAuthModule} from '@angular/fire/auth';
 
 @NgModule({
   declarations: [AppComponent],
   entryComponents: [],
   imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, AngularFireModule.initializeApp(environment.firebase),
     AngularFireDatabaseModule,
-    AngularFireStorageModule],
+    AngularFireStorageModule, AngularFireAuthModule],
   providers: [
     StatusBar,
     SplashScreen,

@@ -1,22 +1,32 @@
-<ion-content [fullscreen]="true">
-  <div class="title">
-    <h1>Learning Hub</h1>
-  </div>
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Learning Hub</ion-title>
+  </ion-toolbar>
+</ion-header>
 
-<div class="google">
-  <ion-button color="light" class="btn-google">Se connecter avec Google
-    <ion-img class="google-icon" src="assets/icon/icon-google.png"></ion-img>
-  </ion-button>
-  <br>
-  <p>OU</p>
-</div>
 
-<div class="connexion">
-  <ion-button class="btn-connexion" (click)="toConnect()">Se connecter</ion-button>
-</div>
 
-<div class="inscription">
-  <ion-button class="btn-inscription" (click)="toInscription()">S'inscrire</ion-button>
-</div>
+
+<ion-content>
+
+  <ion-grid>
+    <div class="google">
+      <ion-button color="light" class="btn-google">Se connecter avec Google
+        <ion-img class="google-icon" src="assets/icon/icon-google.png"></ion-img>
+      </ion-button>
+      <br>
+      <p>OU</p>
+    </div>
+
+    <div class="connexion">
+      <ion-button class="btn-connexion" (click)="toConnect()">Se connecter</ion-button>
+    </div>
+
+    <div class="inscription">
+      <ion-button class="btn-inscription" (click)="toInscription()">S'inscrire</ion-button>
+    </div>
+  </ion-grid>
+
+
   
 </ion-content>

@@ -1,7 +1,22 @@
-<ion-content [fullscreen]="true">
+<ion-header>
+  <ion-toolbar>
+    <ion-icon style=" color: #3a7be0; width: 28px; height: 29px;" slot="start" name="chevron-back-outline"></ion-icon>
+    <ion-button style="width: 97px;" slot="start"fill="clear" routerLink="/bienvenue" router-direction="back">LearningHub</ion-button>
+    <ion-title>Connexion</ion-title>
+    <ion-button  fill="clear" slot="end" (click)="logout()">Deconnexion</ion-button>
+
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
   <div class="title-profil-inscription">
     <h2>Inscription</h2>
   </div>
+
+
+
+
 
   <div class="champs-inscription">
     <div class="input-inscription">
@@ -16,12 +31,12 @@
   
     <div class="input-inscription">
       <p>Mail</p>
-      <ion-input class="access"></ion-input>
+      <ion-input type="email" class="access" [(ngModel)]="dataUser.email"></ion-input>
     </div>
   
     <div class="input-inscription">
       <p>Mot de passe</p>
-      <ion-input class="access"></ion-input>
+      <ion-input type="password" class="access" [(ngModel)]="dataUser.password"></ion-input>
     </div>
   
     <div class="input-inscription">
@@ -30,7 +45,8 @@
     </div>
   
     <div class="inscription">
-      <ion-button class="btn-inscription">S'inscrire</ion-button>
+      <ion-button class="btn-inscription" (click)="signUp()" routerLink="/connexion" router-direction="foward">S'inscrire</ion-button>
     </div>
   </div>
+
 <ion-content>

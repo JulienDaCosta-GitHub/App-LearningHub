@@ -1,21 +1,52 @@
-<ion-content [fullscreen]="true">
-  <div class="title-profil-connexion">
-    <h2>Connexion</h2>
+<ion-header>
+  <ion-toolbar>
+    <ion-icon style=" color: #3a7be0; width: 28px; height: 29px;" slot="start" name="chevron-back-outline"></ion-icon>
+    <ion-button style="width: 97px;" slot="start"fill="clear" routerLink="/bienvenue" router-direction="back">LearningHub</ion-button>
+    <ion-title>Connexion</ion-title>
+    <ion-button *ngIf="connected" fill="clear" slot="end" (click)="logout()">Deconnexion</ion-button>
+
+
+  </ion-toolbar>
+</ion-header>
+<!--ion-header collapse="condense">
+  <ion-toolbar>
+    <ion-title >Connexion</ion-title>
+    <ion-button *ngIf="connected" fill="clear" class="btn-connexion" (click)="logout()">Déconnexion</ion-button>
+
+
+  </ion-toolbar>
+
+</ion-header -->
+
+
+<ion-content >
+
+
+  <div *ngIf="!connected">
+    <div class="champs-connexion">
+      <div class="input-connexion">
+        <p>Adresse mail</p>
+        <ion-input type="email" class="access" [(ngModel)]="dataUser.email"></ion-input>
+      </div>
+
+      <div class="input-connexion">
+        <p>Mot de passe</p>
+        <ion-input type="password" class="access" [(ngModel)]="dataUser.password"></ion-input>
+      </div>
+
+      <div class="connexion">
+        <ion-button class="btn-connexion" (click)="login()">connexion</ion-button>
+      </div>
+    </div>
   </div>
 
-<div class="champs-connexion">
-  <div class="input-connexion">
-    <p>Adresse mail</p>
-    <ion-input class="access"></ion-input>
+  <div *ngIf="connected">
+    <h1>Vous êtes bien connecté</h1>
+    <ion-avatar style="width: 25%; height: 25%; margin: 10% 35%;">
+      <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y">
+    </ion-avatar>
+    <h2>{{email}}</h2>
   </div>
 
-  <div class="input-connexion">
-    <p>Mot de passe</p>
-    <ion-input class="access"></ion-input>
-  </div>
 
-  <div class="connexion">
-    <ion-button class="btn-connexion">Se connecter</ion-button>
-  </div>
-</div>
 </ion-content>
