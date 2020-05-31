@@ -16,8 +16,11 @@ import { AngularFireModule } from '@angular/fire'; // pour se connecter à Fireb
 import { AngularFireDatabaseModule } from '@angular/fire/database'; // pour manipuler la base de données Firebase
 import { AngularFireStorageModule } from '@angular/fire/storage'; // pour accéder aux fonction de stockage et de récupération des fichiers
 <<<<<<< HEAD
+<<<<<<< HEAD
 import { AngularFireAuthModule } from '@angular/fire/auth';
 import { Camera } from '@ionic-native/camera/ngx';
+=======
+>>>>>>> parent of 76e22e5... Add Camera
 =======
 >>>>>>> parent of 76e22e5... Add Camera
 import { environment} from '../environments/environment';
@@ -34,9 +37,12 @@ import { environment} from '../environments/environment';
     StatusBar,
     SplashScreen,
 <<<<<<< HEAD
+<<<<<<< HEAD
     Camera,
     AuthenticationService,
     SafariViewController,
+=======
+>>>>>>> parent of 76e22e5... Add Camera
 =======
 >>>>>>> parent of 76e22e5... Add Camera
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
