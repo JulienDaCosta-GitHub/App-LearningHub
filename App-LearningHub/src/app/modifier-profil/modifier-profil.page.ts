@@ -37,4 +37,11 @@ export class ModifierProfilPage implements OnInit {
       console.log(data);
     });
   }
+
+  toProfil()
+  {
+    this.router.navigateByUrl('profil').then((data) => {
+      console.log(data);
+    });
+  }
 }

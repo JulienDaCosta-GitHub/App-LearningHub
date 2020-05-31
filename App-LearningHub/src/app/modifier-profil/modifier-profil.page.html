@@ -10,16 +10,16 @@
   </div>
 
   <div class="modif">
-    <ion-button class="modif_btn" color="light" style="width: 100%" (click)="toModifierNom()">Modifier le nom</ion-button>
-    <ion-button class="modif_btn" color="light" style="width: 100%" (click)="toModifierPrenom()">Modifier le prénom</ion-button>
-    <ion-button class="modif_btn" color="light" style="width: 100%" (click)="toModifierMail()">Modifier l'adresse mail</ion-button>
-    <ion-button class="modif_btn" color="light" style="width: 100%" (click)="toModifierMdp()">Modifier le mot de passe</ion-button>
+    <ion-button class="modif_btn" color="light" (click)="toModifierNom()">Modifier le nom</ion-button>
+    <ion-button class="modif_btn" color="light" (click)="toModifierPrenom()">Modifier le prénom</ion-button>
+    <ion-button class="modif_btn" color="light" (click)="toModifierMail()">Modifier l'adresse mail</ion-button>
+    <ion-button class="modif_btn" color="light" (click)="toModifierMdp()">Modifier le mot de passe</ion-button>
   </div>
   
 
   
   <div class="save_profil">
-    <ion-button class="save_btn">Enregistrer</ion-button>
+    <ion-button class="save_btn" (click)="toProfil()">Enregistrer</ion-button>
   </div>
   <ion-tabs>
     <ion-tab-bar slot="bottom">
