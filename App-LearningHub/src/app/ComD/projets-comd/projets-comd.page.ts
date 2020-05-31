@@ -24,4 +24,5 @@ export class ProjetsComdPage implements OnInit {
       console.log(data);
     });
   }
+
 }

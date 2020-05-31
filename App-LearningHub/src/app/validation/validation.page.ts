@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ValidationProjetsModel, ValidationCoursModel } from './validation.model' ;
 import {AngularFireDatabase} from '@angular/fire/database';
 import {AngularFireStorage} from '@angular/fire/storage';
+import {Router} from '@angular/router';
 
 
 @Component({
@@ -71,7 +72,8 @@ export class ValidationPage implements OnInit {
 
 
   constructor(public afDB: AngularFireDatabase,
-              public afSG: AngularFireStorage) {
+              public afSG: AngularFireStorage,
+              public router: Router) {
     this.getImagesDatabase();
   }
 

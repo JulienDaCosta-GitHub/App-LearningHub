@@ -37,4 +37,5 @@ export class ModifierProfilPage implements OnInit {
       console.log(data);
     });
   }
+
 }

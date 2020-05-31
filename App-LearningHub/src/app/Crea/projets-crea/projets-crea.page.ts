@@ -24,4 +24,5 @@ export class ProjetsCreaPage implements OnInit {
       console.log(data);
     });
   }
+
 }

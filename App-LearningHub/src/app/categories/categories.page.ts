@@ -3,6 +3,8 @@ import { Component, OnInit } from '@angular/core';
 import {Categorie, CategorieService} from '../services/categorie.service';
 
 
+
+
 @Component({
   selector: 'app-categories',
   templateUrl: './categories.page.html',
@@ -49,5 +51,6 @@ export class CategoriesPage implements OnInit {
   remove(item){
     this.categorieService.removeCategorie(item.id);
   }
+
 
 }

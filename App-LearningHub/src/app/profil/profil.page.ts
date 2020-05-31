@@ -19,4 +19,5 @@ export class ProfilPage implements OnInit {
       console.log(data);
     });
   }
+
 }

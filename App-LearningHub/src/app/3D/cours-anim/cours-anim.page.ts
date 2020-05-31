@@ -24,4 +24,5 @@ export class CoursAnimPage implements OnInit {
       console.log(data);
     });
   }
+
 }
