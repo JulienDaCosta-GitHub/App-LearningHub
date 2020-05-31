@@ -9,7 +9,7 @@
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<ion-header>\n  <ion-toolbar>\n    <ion-title>Recherche</ion-title>\n\n    <ion-searchbar (ionInput)=\"filterJsonData($event)\"></ion-searchbar>\n  </ion-toolbar>\n</ion-header>\n\n<ion-content>\n  <div class=\"ion-padding\">\n    <ion-list>\n      <ion-item (click)=\"selectVal(item.name)\" *ngFor=\"let item of jsonData\">\n        {{item.name}}\n      </ion-item>\n    </ion-list>\n  </div>\n</ion-content>\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<ion-header>\n  <ion-toolbar>\n    <ion-title>Recherche</ion-title>\n\n    <ion-searchbar (ionInput)=\"filterJsonData($event)\"></ion-searchbar>\n  </ion-toolbar>\n</ion-header>\n\n<ion-content>\n  <div class=\"ion-padding\">\n    <ion-list>\n      <ion-item (click)=\"selectVal(item.name)\" *ngFor=\"let item of jsonData\">\n        {{item.name}}\n      </ion-item>\n    </ion-list>\n  </div>\n\n</ion-content>\n");
 
 /***/ }),
 

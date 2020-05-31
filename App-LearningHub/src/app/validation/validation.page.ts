@@ -31,8 +31,8 @@ export class ValidationPage implements OnInit {
       {
           id: 2,
           title: 'test' ,
-          categorie: '',
-          url: 'https://i.pinimg.com/236x/ef/8e/a3/ef8ea321f0365aafe631c52e38f1d6b8.jpg'
+          categorie: 'UX/UI',
+          url: 'assets/img/fleurs.png'
       }
   ] ;
 
@@ -45,7 +45,7 @@ export class ValidationPage implements OnInit {
   validationsCours: ValidationCoursModel[] = [
     {
       id: 0,
-      title: 'BarbaJs' ,
+      title: 'Web design' ,
       categorie: 'Web Design',
       url: 'https://i.pinimg.com/236x/1e/c1/e8/1ec1e82d784b39ae763a93bb43a4e313.jpg'
     },

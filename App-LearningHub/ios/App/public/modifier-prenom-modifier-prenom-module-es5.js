@@ -21,7 +21,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<ion-nav-bar>\n  <div>\n    <ion-nav-back-button class=\"button-clear\">\n      <ion-img class=\"arrow\" src=\"assets/icon/back.png\"></ion-img>\n      <p class=\"title-back\">Mon profil</p>\n    </ion-nav-back-button>\n  </div>\n</ion-nav-bar>\n\n<ion-content>\n\n  <div class=\"title\">\n    <h2>Modifier</h2>\n    <h2>votre prénom</h2>\n  </div>\n\n  \n  <div class=\"input-modif\">\n    <p>Votre nouveau prénom</p>\n    <ion-input class=\"access\"></ion-input>\n  </div>\n\n  <div class=\"save\">\n    <ion-button class=\"btn-save\">Enregistrer</ion-button>\n  </div>\n  \n\n</ion-content>\n";
+    __webpack_exports__["default"] = "<ion-nav-bar>\n  <div>\n    <ion-nav-back-button class=\"button-clear\">\n      <ion-img class=\"arrow\" src=\"assets/icon/back.png\"></ion-img>\n      <p class=\"title-back\">Mon profil</p>\n    </ion-nav-back-button>\n  </div>\n</ion-nav-bar>\n\n<ion-content>\n\n  <div class=\"title\">\n    <h2>Modifier</h2>\n    <h2>votre prénom</h2>\n  </div>\n\n  \n  <div class=\"input-modif\">\n    <p>Votre nouveau prénom</p>\n    <ion-input class=\"access\"></ion-input>\n  </div>\n\n  <div class=\"save\">\n    <ion-button class=\"btn-save\">Enregistrer</ion-button>\n  </div>\n\n\n</ion-content>\n";
     /***/
   },
 
@@ -209,10 +209,18 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
     /*! @angular/core */
     "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
+    /* harmony import */
+
+
+    var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    /*! @angular/router */
+    "./node_modules/@angular/router/__ivy_ngcc__/fesm2015/router.js");
 
     var ModifierPrenomPage = /*#__PURE__*/function () {
-      function ModifierPrenomPage() {
+      function ModifierPrenomPage(router) {
         _classCallCheck(this, ModifierPrenomPage);
+
+        this.router = router;
       }
 
       _createClass(ModifierPrenomPage, [{
@@ -222,6 +230,12 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
       return ModifierPrenomPage;
     }();
+
+    ModifierPrenomPage.ctorParameters = function () {
+      return [{
+        type: _angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"]
+      }];
+    };
 
     ModifierPrenomPage = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
       selector: 'app-modifier-prenom',

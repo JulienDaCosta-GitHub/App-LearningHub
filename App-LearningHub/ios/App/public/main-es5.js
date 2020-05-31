@@ -166,7 +166,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<ion-app>\n  <ion-router-outlet></ion-router-outlet>\n  <ion-tabs>\n    <ion-tab-bar slot=\"bottom\">\n      <ion-tab-button tab=\"schedule\">\n        <ion-icon name=\"home-outline\"></ion-icon>\n        <ion-label>Accueil</ion-label>\n      </ion-tab-button>\n\n      <ion-tab-button tab=\"speakers\">\n        <ion-icon name=\"add-circle-outline\"></ion-icon>\n        <ion-label>Ajout</ion-label>\n      </ion-tab-button>\n\n      <ion-tab-button tab=\"map\">\n        <ion-icon name=\"person-circle-outline\"></ion-icon>\n        <ion-label>Profil</ion-label>\n      </ion-tab-button>\n    </ion-tab-bar>\n  </ion-tabs>\n</ion-app>\n";
+    __webpack_exports__["default"] = "<ion-app>\n  <ion-router-outlet></ion-router-outlet>\n  <ion-tabs>\n    <ion-tab-bar slot=\"bottom\">\n      <ion-tab-button tab=\"schedule\" (click)=\"toAccueil()\">\n        <ion-icon name=\"home-outline\"></ion-icon>\n        <ion-label>Accueil</ion-label>\n      </ion-tab-button>\n\n      <ion-tab-button tab=\"speakers\" (click)=\"toAjout()\">\n        <ion-icon name=\"add-circle-outline\"></ion-icon>\n        <ion-label>Ajout</ion-label>\n      </ion-tab-button>\n\n      <ion-tab-button tab=\"map\" (click)=\"toProfil()\">\n        <ion-icon name=\"person-circle-outline\"></ion-icon>\n        <ion-label>Profil</ion-label>\n      </ion-tab-button>\n    </ion-tab-bar>\n  </ion-tabs>\n</ion-app>\n";
     /***/
   },
 
@@ -210,7 +210,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
     var routes = [{
       path: '',
-      redirectTo: 'validation',
+      redirectTo: 'bienvenue',
       pathMatch: 'full'
     }, {
       path: 'bienvenue',
@@ -604,14 +604,21 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     var _ionic_native_status_bar_ngx__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
     /*! @ionic-native/status-bar/ngx */
     "./node_modules/@ionic-native/status-bar/__ivy_ngcc__/ngx/index.js");
+    /* harmony import */
+
+
+    var _angular_router__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
+    /*! @angular/router */
+    "./node_modules/@angular/router/__ivy_ngcc__/fesm2015/router.js");
 
     var AppComponent = /*#__PURE__*/function () {
-      function AppComponent(platform, splashScreen, statusBar) {
+      function AppComponent(platform, splashScreen, statusBar, router) {
         _classCallCheck(this, AppComponent);
 
         this.platform = platform;
         this.splashScreen = splashScreen;
         this.statusBar = statusBar;
+        this.router = router;
         this.initializeApp();
       }
 
@@ -626,6 +633,27 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
             _this.splashScreen.hide();
           });
         }
+      }, {
+        key: "toAccueil",
+        value: function toAccueil() {
+          this.router.navigateByUrl('accueil').then(function (data) {
+            console.log(data);
+          });
+        }
+      }, {
+        key: "toAjout",
+        value: function toAjout() {
+          this.router.navigateByUrl('ajout').then(function (data) {
+            console.log(data);
+          });
+        }
+      }, {
+        key: "toProfil",
+        value: function toProfil() {
+          this.router.navigateByUrl('profil').then(function (data) {
+            console.log(data);
+          });
+        }
       }]);
 
       return AppComponent;
@@ -638,6 +666,8 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         type: _ionic_native_splash_screen_ngx__WEBPACK_IMPORTED_MODULE_3__["SplashScreen"]
       }, {
         type: _ionic_native_status_bar_ngx__WEBPACK_IMPORTED_MODULE_4__["StatusBar"]
+      }, {
+        type: _angular_router__WEBPACK_IMPORTED_MODULE_5__["Router"]
       }];
     };
 

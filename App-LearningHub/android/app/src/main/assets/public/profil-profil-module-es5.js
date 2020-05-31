@@ -21,7 +21,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<ion-content>\n\n  <div class=\"avatar\">\n    <ion-avatar>\n      <img src=\"https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y\">\n    </ion-avatar>\n  </div>\n  \n  <h2>Jean Pierre</h2>\n  \n  <div class=\"options\">\n      <ion-button class=\"modifier\" (click)=\"toModifierProfil()\">Modifier mon profil</ion-button>\n      <ion-button class=\"fichiers\">Voir mes cours/projets</ion-button>\n      <ion-button class=\"favoris\">Voir mes favoris</ion-button>\n  </div>\n  \n  <div class=\"deconnexion\">\n    <ion-button color=\"danger\">Déconnexion</ion-button>\n  </div>\n  \n  </ion-content>\n  ";
+    __webpack_exports__["default"] = "<ion-content>\n\n  <div class=\"avatar\">\n    <ion-avatar>\n      <img src=\"https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y\">\n    </ion-avatar>\n  </div>\n  \n  <h2>Jean Pierre</h2>\n  \n  <div class=\"options\">\n      <ion-button class=\"modifier\" (click)=\"toModifierProfil()\">Modifier mon profil</ion-button>\n      <ion-button class=\"fichiers\">Voir mes cours/projets</ion-button>\n      <ion-button class=\"favoris\">Voir mes favoris</ion-button>\n  </div>\n  \n  <div class=\"deconnexion\">\n    <ion-button color=\"danger\">Déconnexion</ion-button>\n  </div>\n\n  </ion-content>\n";
     /***/
   },
 
