@@ -1,6 +1,7 @@
 .title-profil-inscription {
     text-align: center;
-    margin-top: 40px;
+    margin-top: 15%;
+    margin-bottom: 25%;
 }
 
 .access {
@@ -27,3 +28,8 @@
 ion-content {
     --overflow: hidden;
 }
+
+ion-item {
+    padding-right: 20px;
+}
+
