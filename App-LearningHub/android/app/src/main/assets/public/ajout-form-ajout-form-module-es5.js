@@ -388,7 +388,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
                                 _context4.next = 5;
                                 return this.alertController.create({
                                   header: 'Félicitation',
-                                  message: 'L\'envoi à Firebase est terminé!',
+                                  message: 'Le projet a été ajouté !',
                                   buttons: ['OK']
                                 });
 

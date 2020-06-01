@@ -189,7 +189,7 @@ let AjoutFormPage = class AjoutFormPage {
                 yield loading.dismiss();
                 const alert = yield this.alertController.create({
                     header: 'Félicitation',
-                    message: 'L\'envoi à Firebase est terminé!',
+                    message: 'Le projet a été ajouté !',
                     buttons: ['OK']
                 });
                 yield alert.present();
